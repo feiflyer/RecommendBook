@@ -37,7 +37,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         pushNavigationController.tabBarItem = pushTabBarItem
         circleNavigationController.tabBarItem = circleTabBarItem
         moreNavigationControllrt.tabBarItem = moreTabBarItem
-        
+     
+        //设置tabbarController的条目选中后的颜色
         rankNavigationController.tabBarController?.tabBar.tintColor = MAIN_RED
         
         self.window?.rootViewController = tabBarController

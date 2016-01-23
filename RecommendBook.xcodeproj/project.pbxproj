@@ -41,6 +41,7 @@
 		BECDF7781C532E4A00D70D52 /* CircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
 		BECDF77A1C532E5D00D70D52 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		BECDF77C1C5334FF00D70D52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BECDF77F1C53ACB700D70D52 /* 隶变体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "隶变体.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +63,7 @@
 		BECDF7411C5314C800D70D52 = {
 			isa = PBXGroup;
 			children = (
+				BECDF77E1C53495000D70D52 /* Resource */,
 				BECDF75F1C53261A00D70D52 /* Frameworks */,
 				BECDF74C1C5314C800D70D52 /* RecommendBook */,
 				BECDF74B1C5314C800D70D52 /* Products */,
@@ -144,6 +146,14 @@
 				BECDF77A1C532E5D00D70D52 /* MoreViewController.swift */,
 			);
 			name = More;
+			sourceTree = "<group>";
+		};
+		BECDF77E1C53495000D70D52 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				BECDF77F1C53ACB700D70D52 /* 隶变体.ttf */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
