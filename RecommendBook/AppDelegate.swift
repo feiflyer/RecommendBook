@@ -15,7 +15,40 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
+        self.window = UIWindow(frame: CGRectMake(0,0,SCREEN_WIDTH , SCREEN_HIGHT))
+        
+        let tabBarController = UITabBarController()
+        let rankNavigationController = UINavigationController(rootViewController: RankViewController())
+        let searchNavigationController = UINavigationController(rootViewController: SearchViewController())
+        let pushNavigationController = UINavigationController(rootViewController: PushViewController())
+        let circleNavigationController = UINavigationController(rootViewController: CircleViewController())
+        let moreNavigationControllrt = UINavigationController(rootViewController: MoreViewController())
+        
+        tabBarController.viewControllers = [rankNavigationController , searchNavigationController , pushNavigationController , circleNavigationController , moreNavigationControllrt]
+        
+        let rankTabBarItem = UITabBarItem(title: "排行榜", image: UIImage(named: "bio"), selectedImage: UIImage(named: "bio_red"))
+        let searchTabBarItem = UITabBarItem(title: "发现", image: UIImage(named: "timer 2"), selectedImage: UIImage(named: "timer 2_red"))
+        let pushTabBarItem = UITabBarItem(title: " ", image: UIImage(named: "pencil"), selectedImage: UIImage(named: "user two_red"))
+        let circleTabBarItem = UITabBarItem(title: "圈子", image: UIImage(named: "users two-2"), selectedImage: UIImage(named: "uusers two-2_red"))
+        let moreTabBarItem = UITabBarItem(title: "更多", image: UIImage(named: "more"), selectedImage: UIImage(named: "more_red"))
+        
+        rankNavigationController.tabBarItem = rankTabBarItem
+        searchNavigationController.tabBarItem = searchTabBarItem
+        pushNavigationController.tabBarItem = pushTabBarItem
+        circleNavigationController.tabBarItem = circleTabBarItem
+        moreNavigationControllrt.tabBarItem = moreTabBarItem
+        
+        rankNavigationController.tabBarController?.tabBar.tintColor = MAIN_RED
+        
+        self.window?.rootViewController = tabBarController
+        self.window?.makeKeyAndVisible()
+        
+        
+        
+        
+        
+        
+        
         return true
     }
 

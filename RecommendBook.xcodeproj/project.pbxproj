@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		BECDF74E1C5314C800D70D52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF74D1C5314C800D70D52 /* AppDelegate.swift */; };
-		BECDF7551C5314C800D70D52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7541C5314C800D70D52 /* Assets.xcassets */; };
 		BECDF7581C5314C800D70D52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7561C5314C800D70D52 /* LaunchScreen.storyboard */; };
 		BECDF7611C53265100D70D52 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECDF7601C53265100D70D52 /* AVOSCloud.framework */; };
 		BECDF7631C5326EB00D70D52 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECDF7621C5326EB00D70D52 /* SystemConfiguration.framework */; };
 		BECDF7651C5326FD00D70D52 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECDF7641C5326FD00D70D52 /* MobileCoreServices.framework */; };
 		BECDF7671C53271200D70D52 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECDF7661C53271200D70D52 /* CoreTelephony.framework */; };
 		BECDF7691C53272500D70D52 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECDF7681C53272500D70D52 /* CoreLocation.framework */; };
-		BECDF76C1C532A4B00D70D52 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF76B1C532A4B00D70D52 /* config.swift */; };
+		BECDF76C1C532A4B00D70D52 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF76B1C532A4B00D70D52 /* Config.swift */; };
+		BECDF7731C532C4C00D70D52 /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF7721C532C4C00D70D52 /* RankViewController.swift */; };
+		BECDF7751C532DFB00D70D52 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF7741C532DFB00D70D52 /* SearchViewController.swift */; };
+		BECDF7771C532E3200D70D52 /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF7761C532E3200D70D52 /* PushViewController.swift */; };
+		BECDF7791C532E4A00D70D52 /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF7781C532E4A00D70D52 /* CircleViewController.swift */; };
+		BECDF77B1C532E5D00D70D52 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF77A1C532E5D00D70D52 /* MoreViewController.swift */; };
+		BECDF77D1C5334FF00D70D52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BECDF77C1C5334FF00D70D52 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BECDF74A1C5314C800D70D52 /* RecommendBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecommendBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECDF74D1C5314C800D70D52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BECDF7541C5314C800D70D52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BECDF7571C5314C800D70D52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BECDF7591C5314C800D70D52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BECDF7601C53265100D70D52 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVOSCloud.framework; sourceTree = "<group>"; };
@@ -30,7 +34,13 @@
 		BECDF7661C53271200D70D52 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
 		BECDF7681C53272500D70D52 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		BECDF76A1C53294000D70D52 /* bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridging.h; sourceTree = "<group>"; };
-		BECDF76B1C532A4B00D70D52 /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
+		BECDF76B1C532A4B00D70D52 /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		BECDF7721C532C4C00D70D52 /* RankViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
+		BECDF7741C532DFB00D70D52 /* SearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		BECDF7761C532E3200D70D52 /* PushViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
+		BECDF7781C532E4A00D70D52 /* CircleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleViewController.swift; sourceTree = "<group>"; };
+		BECDF77A1C532E5D00D70D52 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		BECDF77C1C5334FF00D70D52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,12 +79,17 @@
 		BECDF74C1C5314C800D70D52 /* RecommendBook */ = {
 			isa = PBXGroup;
 			children = (
+				BECDF7711C532BC300D70D52 /* More */,
+				BECDF7701C532BAC00D70D52 /* Circle */,
+				BECDF76F1C532B9700D70D52 /* Push */,
+				BECDF76E1C532B8F00D70D52 /* Search */,
+				BECDF76D1C532B8600D70D52 /* Rank */,
 				BECDF74D1C5314C800D70D52 /* AppDelegate.swift */,
-				BECDF7541C5314C800D70D52 /* Assets.xcassets */,
 				BECDF7561C5314C800D70D52 /* LaunchScreen.storyboard */,
+				BECDF77C1C5334FF00D70D52 /* Assets.xcassets */,
 				BECDF7591C5314C800D70D52 /* Info.plist */,
 				BECDF76A1C53294000D70D52 /* bridging.h */,
-				BECDF76B1C532A4B00D70D52 /* config.swift */,
+				BECDF76B1C532A4B00D70D52 /* Config.swift */,
 			);
 			path = RecommendBook;
 			sourceTree = "<group>";
@@ -89,6 +104,46 @@
 				BECDF7601C53265100D70D52 /* AVOSCloud.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BECDF76D1C532B8600D70D52 /* Rank */ = {
+			isa = PBXGroup;
+			children = (
+				BECDF7721C532C4C00D70D52 /* RankViewController.swift */,
+			);
+			name = Rank;
+			sourceTree = "<group>";
+		};
+		BECDF76E1C532B8F00D70D52 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				BECDF7741C532DFB00D70D52 /* SearchViewController.swift */,
+			);
+			name = Search;
+			sourceTree = "<group>";
+		};
+		BECDF76F1C532B9700D70D52 /* Push */ = {
+			isa = PBXGroup;
+			children = (
+				BECDF7761C532E3200D70D52 /* PushViewController.swift */,
+			);
+			name = Push;
+			sourceTree = "<group>";
+		};
+		BECDF7701C532BAC00D70D52 /* Circle */ = {
+			isa = PBXGroup;
+			children = (
+				BECDF7781C532E4A00D70D52 /* CircleViewController.swift */,
+			);
+			name = Circle;
+			sourceTree = "<group>";
+		};
+		BECDF7711C532BC300D70D52 /* More */ = {
+			isa = PBXGroup;
+			children = (
+				BECDF77A1C532E5D00D70D52 /* MoreViewController.swift */,
+			);
+			name = More;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,8 +205,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECDF77D1C5334FF00D70D52 /* Assets.xcassets in Resources */,
 				BECDF7581C5314C800D70D52 /* LaunchScreen.storyboard in Resources */,
-				BECDF7551C5314C800D70D52 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,8 +217,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BECDF76C1C532A4B00D70D52 /* config.swift in Sources */,
+				BECDF77B1C532E5D00D70D52 /* MoreViewController.swift in Sources */,
+				BECDF76C1C532A4B00D70D52 /* Config.swift in Sources */,
 				BECDF74E1C5314C800D70D52 /* AppDelegate.swift in Sources */,
+				BECDF7791C532E4A00D70D52 /* CircleViewController.swift in Sources */,
+				BECDF7751C532DFB00D70D52 /* SearchViewController.swift in Sources */,
+				BECDF7771C532E3200D70D52 /* PushViewController.swift in Sources */,
+				BECDF7731C532C4C00D70D52 /* RankViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +389,7 @@
 				BECDF75E1C5314C800D70D52 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
