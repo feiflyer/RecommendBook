@@ -8,20 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		BECDF74E1C5314C800D70D52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF74D1C5314C800D70D52 /* AppDelegate.swift */; };
-		BECDF7501C5314C800D70D52 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF74F1C5314C800D70D52 /* ViewController.swift */; };
-		BECDF7531C5314C800D70D52 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7511C5314C800D70D52 /* Main.storyboard */; };
 		BECDF7551C5314C800D70D52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7541C5314C800D70D52 /* Assets.xcassets */; };
 		BECDF7581C5314C800D70D52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7561C5314C800D70D52 /* LaunchScreen.storyboard */; };
+		BECDF7611C53265100D70D52 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECDF7601C53265100D70D52 /* AVOSCloud.framework */; };
+		BECDF7631C5326EB00D70D52 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECDF7621C5326EB00D70D52 /* SystemConfiguration.framework */; };
+		BECDF7651C5326FD00D70D52 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECDF7641C5326FD00D70D52 /* MobileCoreServices.framework */; };
+		BECDF7671C53271200D70D52 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECDF7661C53271200D70D52 /* CoreTelephony.framework */; };
+		BECDF7691C53272500D70D52 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECDF7681C53272500D70D52 /* CoreLocation.framework */; };
+		BECDF76C1C532A4B00D70D52 /* config.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF76B1C532A4B00D70D52 /* config.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BECDF74A1C5314C800D70D52 /* RecommendBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecommendBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECDF74D1C5314C800D70D52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BECDF74F1C5314C800D70D52 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		BECDF7521C5314C800D70D52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BECDF7541C5314C800D70D52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BECDF7571C5314C800D70D52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BECDF7591C5314C800D70D52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BECDF7601C53265100D70D52 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVOSCloud.framework; sourceTree = "<group>"; };
+		BECDF7621C5326EB00D70D52 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		BECDF7641C5326FD00D70D52 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		BECDF7661C53271200D70D52 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		BECDF7681C53272500D70D52 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		BECDF76A1C53294000D70D52 /* bridging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = bridging.h; sourceTree = "<group>"; };
+		BECDF76B1C532A4B00D70D52 /* config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +38,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECDF7691C53272500D70D52 /* CoreLocation.framework in Frameworks */,
+				BECDF7671C53271200D70D52 /* CoreTelephony.framework in Frameworks */,
+				BECDF7651C5326FD00D70D52 /* MobileCoreServices.framework in Frameworks */,
+				BECDF7631C5326EB00D70D52 /* SystemConfiguration.framework in Frameworks */,
+				BECDF7611C53265100D70D52 /* AVOSCloud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +52,7 @@
 		BECDF7411C5314C800D70D52 = {
 			isa = PBXGroup;
 			children = (
+				BECDF75F1C53261A00D70D52 /* Frameworks */,
 				BECDF74C1C5314C800D70D52 /* RecommendBook */,
 				BECDF74B1C5314C800D70D52 /* Products */,
 			);
@@ -55,13 +70,25 @@
 			isa = PBXGroup;
 			children = (
 				BECDF74D1C5314C800D70D52 /* AppDelegate.swift */,
-				BECDF74F1C5314C800D70D52 /* ViewController.swift */,
-				BECDF7511C5314C800D70D52 /* Main.storyboard */,
 				BECDF7541C5314C800D70D52 /* Assets.xcassets */,
 				BECDF7561C5314C800D70D52 /* LaunchScreen.storyboard */,
 				BECDF7591C5314C800D70D52 /* Info.plist */,
+				BECDF76A1C53294000D70D52 /* bridging.h */,
+				BECDF76B1C532A4B00D70D52 /* config.swift */,
 			);
 			path = RecommendBook;
+			sourceTree = "<group>";
+		};
+		BECDF75F1C53261A00D70D52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BECDF7681C53272500D70D52 /* CoreLocation.framework */,
+				BECDF7661C53271200D70D52 /* CoreTelephony.framework */,
+				BECDF7641C5326FD00D70D52 /* MobileCoreServices.framework */,
+				BECDF7621C5326EB00D70D52 /* SystemConfiguration.framework */,
+				BECDF7601C53265100D70D52 /* AVOSCloud.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +152,6 @@
 			files = (
 				BECDF7581C5314C800D70D52 /* LaunchScreen.storyboard in Resources */,
 				BECDF7551C5314C800D70D52 /* Assets.xcassets in Resources */,
-				BECDF7531C5314C800D70D52 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,7 +162,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BECDF7501C5314C800D70D52 /* ViewController.swift in Sources */,
+				BECDF76C1C532A4B00D70D52 /* config.swift in Sources */,
 				BECDF74E1C5314C800D70D52 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,14 +170,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		BECDF7511C5314C800D70D52 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				BECDF7521C5314C800D70D52 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		BECDF7561C5314C800D70D52 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -250,10 +268,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RecommendBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-licucore",
+					"-ObjC",
+					"-lc++",
+					"-lsqlite3",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = flyer.RecommendBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = RecommendBook/bridging.h;
 			};
 			name = Debug;
 		};
@@ -261,10 +291,22 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = RecommendBook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = (
+					"-lz",
+					"-licucore",
+					"-ObjC",
+					"-lc++",
+					"-lsqlite3",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = flyer.RecommendBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = RecommendBook/bridging.h;
 			};
 			name = Release;
 		};
