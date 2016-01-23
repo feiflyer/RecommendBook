@@ -21,6 +21,25 @@
 		BECDF7791C532E4A00D70D52 /* CircleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF7781C532E4A00D70D52 /* CircleViewController.swift */; };
 		BECDF77B1C532E5D00D70D52 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF77A1C532E5D00D70D52 /* MoreViewController.swift */; };
 		BECDF77D1C5334FF00D70D52 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BECDF77C1C5334FF00D70D52 /* Assets.xcassets */; };
+		BECDF7881C53B4DE00D70D52 /* PushNewBookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF7871C53B4DE00D70D52 /* PushNewBookViewController.swift */; };
+		BECDF78B1C53B66F00D70D52 /* TitleGeneralFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF78A1C53B66F00D70D52 /* TitleGeneralFactory.swift */; };
+		BECDF78D1C53C42900D70D52 /* BookTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF78C1C53C42900D70D52 /* BookTitle.swift */; };
+		BECDF79A1C53C78C00D70D52 /* JVFloatLabeledTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = BECDF7951C53C78C00D70D52 /* JVFloatLabeledTextField.m */; };
+		BECDF79B1C53C78C00D70D52 /* JVFloatLabeledTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = BECDF7971C53C78C00D70D52 /* JVFloatLabeledTextView.m */; };
+		BECDF79C1C53C78C00D70D52 /* NSString+TextDirectionality.m in Sources */ = {isa = PBXBuildFile; fileRef = BECDF7991C53C78C00D70D52 /* NSString+TextDirectionality.m */; };
+		BECDF7AB1C53CA0B00D70D52 /* Avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = BECDF79E1C53CA0A00D70D52 /* Avatar.png */; };
+		BECDF7AC1C53CA0B00D70D52 /* blank.png in Resources */ = {isa = PBXBuildFile; fileRef = BECDF79F1C53CA0A00D70D52 /* blank.png */; };
+		BECDF7AD1C53CA0B00D70D52 /* Blank2.png in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7A01C53CA0A00D70D52 /* Blank2.png */; };
+		BECDF7AE1C53CA0B00D70D52 /* Cover.png in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7A11C53CA0A00D70D52 /* Cover.png */; };
+		BECDF7AF1C53CA0B00D70D52 /* ear1.png in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7A21C53CA0A00D70D52 /* ear1.png */; };
+		BECDF7B01C53CA0B00D70D52 /* ear2.png in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7A31C53CA0A00D70D52 /* ear2.png */; };
+		BECDF7B11C53CA0B00D70D52 /* Icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7A41C53CA0A00D70D52 /* Icon2.png */; };
+		BECDF7B21C53CA0B00D70D52 /* logn.png in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7A51C53CA0A00D70D52 /* logn.png */; };
+		BECDF7B31C53CA0B00D70D52 /* page1.png in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7A61C53CA0A00D70D52 /* page1.png */; };
+		BECDF7B41C53CA0B00D70D52 /* page2.png in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7A71C53CA0A00D70D52 /* page2.png */; };
+		BECDF7B51C53CA0B00D70D52 /* page3.png in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7A81C53CA0A00D70D52 /* page3.png */; };
+		BECDF7B61C53CA0B00D70D52 /* page4.png in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7A91C53CA0B00D70D52 /* page4.png */; };
+		BECDF7B71C53CA0B00D70D52 /* red_point.png in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7AA1C53CA0B00D70D52 /* red_point.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +61,28 @@
 		BECDF77A1C532E5D00D70D52 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
 		BECDF77C1C5334FF00D70D52 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BECDF77F1C53ACB700D70D52 /* 隶变体.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "隶变体.ttf"; sourceTree = "<group>"; };
+		BECDF7871C53B4DE00D70D52 /* PushNewBookViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNewBookViewController.swift; sourceTree = "<group>"; };
+		BECDF78A1C53B66F00D70D52 /* TitleGeneralFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitleGeneralFactory.swift; sourceTree = "<group>"; };
+		BECDF78C1C53C42900D70D52 /* BookTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTitle.swift; sourceTree = "<group>"; };
+		BECDF7941C53C78C00D70D52 /* JVFloatLabeledTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextField.h; sourceTree = "<group>"; };
+		BECDF7951C53C78C00D70D52 /* JVFloatLabeledTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextField.m; sourceTree = "<group>"; };
+		BECDF7961C53C78C00D70D52 /* JVFloatLabeledTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVFloatLabeledTextView.h; sourceTree = "<group>"; };
+		BECDF7971C53C78C00D70D52 /* JVFloatLabeledTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVFloatLabeledTextView.m; sourceTree = "<group>"; };
+		BECDF7981C53C78C00D70D52 /* NSString+TextDirectionality.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+TextDirectionality.h"; sourceTree = "<group>"; };
+		BECDF7991C53C78C00D70D52 /* NSString+TextDirectionality.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+TextDirectionality.m"; sourceTree = "<group>"; };
+		BECDF79E1C53CA0A00D70D52 /* Avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Avatar.png; sourceTree = "<group>"; };
+		BECDF79F1C53CA0A00D70D52 /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
+		BECDF7A01C53CA0A00D70D52 /* Blank2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Blank2.png; sourceTree = "<group>"; };
+		BECDF7A11C53CA0A00D70D52 /* Cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cover.png; sourceTree = "<group>"; };
+		BECDF7A21C53CA0A00D70D52 /* ear1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ear1.png; sourceTree = "<group>"; };
+		BECDF7A31C53CA0A00D70D52 /* ear2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ear2.png; sourceTree = "<group>"; };
+		BECDF7A41C53CA0A00D70D52 /* Icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon2.png; sourceTree = "<group>"; };
+		BECDF7A51C53CA0A00D70D52 /* logn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logn.png; sourceTree = "<group>"; };
+		BECDF7A61C53CA0A00D70D52 /* page1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page1.png; sourceTree = "<group>"; };
+		BECDF7A71C53CA0A00D70D52 /* page2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page2.png; sourceTree = "<group>"; };
+		BECDF7A81C53CA0A00D70D52 /* page3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page3.png; sourceTree = "<group>"; };
+		BECDF7A91C53CA0B00D70D52 /* page4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = page4.png; sourceTree = "<group>"; };
+		BECDF7AA1C53CA0B00D70D52 /* red_point.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = red_point.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +122,8 @@
 		BECDF74C1C5314C800D70D52 /* RecommendBook */ = {
 			isa = PBXGroup;
 			children = (
+				BECDF7891C53B61A00D70D52 /* Factory */,
+				BECDF7831C53B49C00D70D52 /* PushNewBook */,
 				BECDF7711C532BC300D70D52 /* More */,
 				BECDF7701C532BAC00D70D52 /* Circle */,
 				BECDF76F1C532B9700D70D52 /* Push */,
@@ -127,7 +170,9 @@
 		BECDF76F1C532B9700D70D52 /* Push */ = {
 			isa = PBXGroup;
 			children = (
-				BECDF7761C532E3200D70D52 /* PushViewController.swift */,
+				BECDF7821C53AFE200D70D52 /* C */,
+				BECDF7811C53AFDB00D70D52 /* V */,
+				BECDF7801C53AFD100D70D52 /* M */,
 			);
 			name = Push;
 			sourceTree = "<group>";
@@ -151,9 +196,115 @@
 		BECDF77E1C53495000D70D52 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				BECDF79D1C53CA0A00D70D52 /* Image */,
+				BECDF78E1C53C49800D70D52 /* ThirdKit */,
 				BECDF77F1C53ACB700D70D52 /* 隶变体.ttf */,
 			);
 			name = Resource;
+			sourceTree = "<group>";
+		};
+		BECDF7801C53AFD100D70D52 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		BECDF7811C53AFDB00D70D52 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		BECDF7821C53AFE200D70D52 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				BECDF7761C532E3200D70D52 /* PushViewController.swift */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		BECDF7831C53B49C00D70D52 /* PushNewBook */ = {
+			isa = PBXGroup;
+			children = (
+				BECDF7861C53B4B900D70D52 /* C */,
+				BECDF7851C53B4B300D70D52 /* V */,
+				BECDF7841C53B4AD00D70D52 /* M */,
+			);
+			name = PushNewBook;
+			sourceTree = "<group>";
+		};
+		BECDF7841C53B4AD00D70D52 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		BECDF7851C53B4B300D70D52 /* V */ = {
+			isa = PBXGroup;
+			children = (
+				BECDF78C1C53C42900D70D52 /* BookTitle.swift */,
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		BECDF7861C53B4B900D70D52 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				BECDF7871C53B4DE00D70D52 /* PushNewBookViewController.swift */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
+		BECDF7891C53B61A00D70D52 /* Factory */ = {
+			isa = PBXGroup;
+			children = (
+				BECDF78A1C53B66F00D70D52 /* TitleGeneralFactory.swift */,
+			);
+			name = Factory;
+			sourceTree = "<group>";
+		};
+		BECDF78E1C53C49800D70D52 /* ThirdKit */ = {
+			isa = PBXGroup;
+			children = (
+				BECDF7931C53C77900D70D52 /* JVFloatLabeledTextField */,
+			);
+			name = ThirdKit;
+			sourceTree = "<group>";
+		};
+		BECDF7931C53C77900D70D52 /* JVFloatLabeledTextField */ = {
+			isa = PBXGroup;
+			children = (
+				BECDF7941C53C78C00D70D52 /* JVFloatLabeledTextField.h */,
+				BECDF7951C53C78C00D70D52 /* JVFloatLabeledTextField.m */,
+				BECDF7961C53C78C00D70D52 /* JVFloatLabeledTextView.h */,
+				BECDF7971C53C78C00D70D52 /* JVFloatLabeledTextView.m */,
+				BECDF7981C53C78C00D70D52 /* NSString+TextDirectionality.h */,
+				BECDF7991C53C78C00D70D52 /* NSString+TextDirectionality.m */,
+			);
+			name = JVFloatLabeledTextField;
+			sourceTree = "<group>";
+		};
+		BECDF79D1C53CA0A00D70D52 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				BECDF79E1C53CA0A00D70D52 /* Avatar.png */,
+				BECDF79F1C53CA0A00D70D52 /* blank.png */,
+				BECDF7A01C53CA0A00D70D52 /* Blank2.png */,
+				BECDF7A11C53CA0A00D70D52 /* Cover.png */,
+				BECDF7A21C53CA0A00D70D52 /* ear1.png */,
+				BECDF7A31C53CA0A00D70D52 /* ear2.png */,
+				BECDF7A41C53CA0A00D70D52 /* Icon2.png */,
+				BECDF7A51C53CA0A00D70D52 /* logn.png */,
+				BECDF7A61C53CA0A00D70D52 /* page1.png */,
+				BECDF7A71C53CA0A00D70D52 /* page2.png */,
+				BECDF7A81C53CA0A00D70D52 /* page3.png */,
+				BECDF7A91C53CA0B00D70D52 /* page4.png */,
+				BECDF7AA1C53CA0B00D70D52 /* red_point.png */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,8 +366,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECDF7AC1C53CA0B00D70D52 /* blank.png in Resources */,
+				BECDF7B21C53CA0B00D70D52 /* logn.png in Resources */,
+				BECDF7AE1C53CA0B00D70D52 /* Cover.png in Resources */,
+				BECDF7B61C53CA0B00D70D52 /* page4.png in Resources */,
+				BECDF7B31C53CA0B00D70D52 /* page1.png in Resources */,
+				BECDF7B71C53CA0B00D70D52 /* red_point.png in Resources */,
 				BECDF77D1C5334FF00D70D52 /* Assets.xcassets in Resources */,
+				BECDF7AB1C53CA0B00D70D52 /* Avatar.png in Resources */,
+				BECDF7B51C53CA0B00D70D52 /* page3.png in Resources */,
+				BECDF7AF1C53CA0B00D70D52 /* ear1.png in Resources */,
+				BECDF7B01C53CA0B00D70D52 /* ear2.png in Resources */,
+				BECDF7B11C53CA0B00D70D52 /* Icon2.png in Resources */,
+				BECDF7AD1C53CA0B00D70D52 /* Blank2.png in Resources */,
 				BECDF7581C5314C800D70D52 /* LaunchScreen.storyboard in Resources */,
+				BECDF7B41C53CA0B00D70D52 /* page2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -227,12 +391,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BECDF78B1C53B66F00D70D52 /* TitleGeneralFactory.swift in Sources */,
 				BECDF77B1C532E5D00D70D52 /* MoreViewController.swift in Sources */,
+				BECDF79A1C53C78C00D70D52 /* JVFloatLabeledTextField.m in Sources */,
 				BECDF76C1C532A4B00D70D52 /* Config.swift in Sources */,
 				BECDF74E1C5314C800D70D52 /* AppDelegate.swift in Sources */,
+				BECDF79C1C53C78C00D70D52 /* NSString+TextDirectionality.m in Sources */,
 				BECDF7791C532E4A00D70D52 /* CircleViewController.swift in Sources */,
+				BECDF79B1C53C78C00D70D52 /* JVFloatLabeledTextView.m in Sources */,
+				BECDF78D1C53C42900D70D52 /* BookTitle.swift in Sources */,
 				BECDF7751C532DFB00D70D52 /* SearchViewController.swift in Sources */,
 				BECDF7771C532E3200D70D52 /* PushViewController.swift in Sources */,
+				BECDF7881C53B4DE00D70D52 /* PushNewBookViewController.swift in Sources */,
 				BECDF7731C532C4C00D70D52 /* RankViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
