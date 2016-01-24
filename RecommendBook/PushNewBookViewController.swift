@@ -211,6 +211,11 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
     func tableSelectType(){
         let pushTypeController = PushTypeViewController()
         TitleGeneralFactory.addTitle(pushTypeController)
+        let leftButton = pushTypeController.view.viewWithTag(1234) as! UIButton
+        leftButton.setTitleColor(RGB(38, g: 82, b: 67), forState: .Normal)
+        let rightButton = pushTypeController.view.viewWithTag(1235) as! UIButton
+        rightButton.setTitleColor(RGB(38, g: 82, b: 67), forState: .Normal)
+        
         presentViewController(pushTypeController, animated: true, completion: nil)
     }
     

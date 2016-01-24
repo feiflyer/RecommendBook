@@ -12,6 +12,7 @@ class TitleGeneralFactory: NSObject {
 
     static func addTitle(target: UIViewController , leftTitle: String = "关闭" , rightTitle: String = "确定"){
         let leftButton = UIButton(frame: CGRectMake(10, 20, 40, 20))
+        leftButton.tag = 1234
         leftButton.setTitle(leftTitle, forState: .Normal)
         leftButton.contentHorizontalAlignment = .Left
         leftButton.titleLabel?.font = UIFont(name: MAIN_FONT, size: 15)
@@ -20,6 +21,7 @@ class TitleGeneralFactory: NSObject {
         target.view.addSubview(leftButton)
         
         let rightButton = UIButton(frame: CGRectMake(SCREEN_WIDTH - 50, 20, 40, 20))
+        rightButton.tag = 1235
         rightButton.setTitle(rightTitle, forState: .Normal)
         rightButton.contentHorizontalAlignment = .Left
         rightButton.titleLabel?.font = UIFont(name: MAIN_FONT, size: 15)
