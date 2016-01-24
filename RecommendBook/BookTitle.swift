@@ -19,7 +19,8 @@ class BookTitle: UIView {
     var bookCover: UIButton?
     var bookName: JVFloatLabeledTextField?
     var bookEditor: JVFloatLabeledTextField?
-    var delegate: BookTittleDelegate?
+    //加上weak是为了避免内存泄漏
+    weak var delegate: BookTittleDelegate?
     
    override init(frame: CGRect) {
         super.init(frame: frame)
