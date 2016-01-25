@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE4009621C5645BC003DF790 /* IGLDropDownItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BE40095F1C5645BC003DF790 /* IGLDropDownItem.m */; };
+		BE4009631C5645BC003DF790 /* IGLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4009611C5645BC003DF790 /* IGLDropDownMenu.m */; };
 		BECDF74E1C5314C800D70D52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF74D1C5314C800D70D52 /* AppDelegate.swift */; };
 		BECDF7581C5314C800D70D52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7561C5314C800D70D52 /* LaunchScreen.storyboard */; };
 		BECDF7611C53265100D70D52 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECDF7601C53265100D70D52 /* AVOSCloud.framework */; };
@@ -69,6 +71,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE40095E1C5645BC003DF790 /* IGLDropDownItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGLDropDownItem.h; sourceTree = "<group>"; };
+		BE40095F1C5645BC003DF790 /* IGLDropDownItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLDropDownItem.m; sourceTree = "<group>"; };
+		BE4009601C5645BC003DF790 /* IGLDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGLDropDownMenu.h; sourceTree = "<group>"; };
+		BE4009611C5645BC003DF790 /* IGLDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLDropDownMenu.m; sourceTree = "<group>"; };
 		BECDF74A1C5314C800D70D52 /* RecommendBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecommendBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECDF74D1C5314C800D70D52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BECDF7571C5314C800D70D52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -156,6 +162,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE40095D1C5645BC003DF790 /* IGLDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				BE40095E1C5645BC003DF790 /* IGLDropDownItem.h */,
+				BE40095F1C5645BC003DF790 /* IGLDropDownItem.m */,
+				BE4009601C5645BC003DF790 /* IGLDropDownMenu.h */,
+				BE4009611C5645BC003DF790 /* IGLDropDownMenu.m */,
+			);
+			path = IGLDropDownMenu;
+			sourceTree = "<group>";
+		};
 		BECDF7411C5314C800D70D52 = {
 			isa = PBXGroup;
 			children = (
@@ -329,6 +346,7 @@
 		BECDF78E1C53C49800D70D52 /* ThirdKit */ = {
 			isa = PBXGroup;
 			children = (
+				BE40095D1C5645BC003DF790 /* IGLDropDownMenu */,
 				BED0331C1C5516EC00030D92 /* AKSegmentedControl */,
 				BED033141C54ED4100030D92 /* LDXScore */,
 				BED033081C5479FF00030D92 /* VPImageCropperViewController */,
@@ -535,9 +553,11 @@
 				BED0330B1C5479FF00030D92 /* VPImageCropperViewController.m in Sources */,
 				BECDF79C1C53C78C00D70D52 /* NSString+TextDirectionality.m in Sources */,
 				BED033071C546A0300030D92 /* PhotoPickerController.swift in Sources */,
+				BE4009621C5645BC003DF790 /* IGLDropDownItem.m in Sources */,
 				BED033131C54955D00030D92 /* PushDescriptionViewController.swift in Sources */,
 				BECDF7791C532E4A00D70D52 /* CircleViewController.swift in Sources */,
 				BED0330D1C5494FD00030D92 /* PushTitleViewController.swift in Sources */,
+				BE4009631C5645BC003DF790 /* IGLDropDownMenu.m in Sources */,
 				BECDF79B1C53C78C00D70D52 /* JVFloatLabeledTextView.m in Sources */,
 				BECDF78D1C53C42900D70D52 /* BookTitle.swift in Sources */,
 				BECDF7751C532DFB00D70D52 /* SearchViewController.swift in Sources */,

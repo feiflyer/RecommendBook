@@ -227,8 +227,7 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
         TitleGeneralFactory.addTitle(pushDescriptionController)
         presentViewController(pushDescriptionController, animated: true, completion: nil)
     }
-    
-    
+
     //析构函数
     deinit{
         print("deinit----")
