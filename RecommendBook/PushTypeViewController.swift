@@ -8,7 +8,12 @@
 
 import UIKit
 
+//声明一个闭包
+typealias PushTypeCloser = (type: String , detailType: String) -> Void
+
 class PushTypeViewController: UIViewController , IGLDropDownMenuDelegate{
+    
+    var callBack: PushTypeCloser?
     
     var literatureArray1:Array<NSDictionary> = []
     var literatureArray2:Array<NSDictionary> = []
@@ -69,6 +74,9 @@ class PushTypeViewController: UIViewController , IGLDropDownMenuDelegate{
     }
     
     func sure(){
+        if callBack != nil{
+           callBack?(type: self.type , detailType: self.detailType)
+        }
         dismissViewControllerAnimated(true, completion: nil)
     }
     

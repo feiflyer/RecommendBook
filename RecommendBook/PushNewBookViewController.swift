@@ -17,6 +17,9 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
     
     //是否显示评分条
     var isShowScore = false
+    
+    var type = "文学"
+    var detailType = "文学"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -111,10 +114,19 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
         cell.textLabel?.text = titleArray[indexPath.row]
         cell.textLabel?.font = UIFont(name: MAIN_FONT, size: 14)
         cell.detailTextLabel?.font = UIFont(name: MAIN_FONT, size: 14)
-        switch indexPath.row {
+        
+        var row = indexPath.row
+        if isShowScore && row > 1{
+            row--
+        }
+        switch row{
         case 0:
             cell.detailTextLabel?.text = bookDetail
             break
+            
+        case 2:
+            cell.detailTextLabel?.text = type + "->" + detailType
+            break;
             
             default:
             
@@ -210,6 +222,14 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
      */
     func tableSelectType(){
         let pushTypeController = PushTypeViewController()
+        pushTypeController.type = self.type
+        pushTypeController.detailType = self.detailType
+        pushTypeController.callBack = {
+            (type: String , detailType: String) -> Void in
+            self.type = type
+            self.detailType = detailType
+            self.tableView.reloadData()
+        }
         TitleGeneralFactory.addTitle(pushTypeController)
         let leftButton = pushTypeController.view.viewWithTag(1234) as! UIButton
         leftButton.setTitleColor(RGB(38, g: 82, b: 67), forState: .Normal)
