@@ -20,6 +20,7 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
     
     var type = "文学"
     var detailType = "文学"
+    var bookDescription = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -128,6 +129,17 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
             cell.detailTextLabel?.text = type + "->" + detailType
             break;
             
+        case 4:
+            
+            cell.accessoryType = .None
+            let commentView = UITextView(frame: CGRectMake(4,4,SCREEN_WIDTH-8,80))
+            commentView.text = self.bookDescription
+            commentView.font = UIFont(name: MAIN_FONT, size: 14)
+            commentView.editable = false
+            cell.contentView.addSubview(commentView)
+            
+            break;
+            
             default:
             
             break
@@ -140,6 +152,17 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
         
         return cell
     }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if isShowScore && indexPath.row >= 5 {
+            return 88
+        }else if !isShowScore && indexPath.row >= 4 {
+            return 88
+        }else{
+            return 44
+        }
+    }
+
     
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         //点击动作效果
@@ -244,6 +267,20 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
      */
     func tableSelectDescription(){
         let pushDescriptionController = PushDescriptionViewController()
+        pushDescriptionController.bookDescription = self.bookDescription
+        pushDescriptionController.callBack = {
+            (description) -> Void in
+            self.bookDescription = description
+            if self.titleArray.last == ""{
+                self.titleArray.removeLast()
+            }
+            
+            if description != ""{
+                self.titleArray.append("")
+                self.tableView.reloadData()
+            }
+            
+        }
         TitleGeneralFactory.addTitle(pushDescriptionController)
         presentViewController(pushDescriptionController, animated: true, completion: nil)
     }

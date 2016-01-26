@@ -9,17 +9,32 @@
 
 import UIKit
 
+typealias DescriptionCloser = (description: String) -> Void
+
 class PushDescriptionViewController: UIViewController {
+    
+    var bookDescription = ""
+    var textView: JVFloatLabeledTextView!
+    var callBack: DescriptionCloser?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        view.backgroundColor = UIColor.whiteColor()
+        textView = JVFloatLabeledTextView(frame: CGRectMake(8, 58, SCREEN_WIDTH - 16, SCREEN_HIGHT-58-8))
+        view.addSubview(textView)
+        textView.placeholder = "    你可以在这里撰写想写的评价、吐槽、介绍～～"
+        textView.font = UIFont(name: MAIN_FONT, size: 15)
+        view.tintColor = UIColor.grayColor()
+        textView.text = bookDescription
+        textView.becomeFirstResponder()
+        
+        XKeyBoard.registerKeyBoardHide(self)
+        XKeyBoard.registerKeyBoardShow(self)
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     
@@ -29,19 +44,23 @@ class PushDescriptionViewController: UIViewController {
     }
     
     func sure(){
+         callBack?(description: textView.text)
         dismissViewControllerAnimated(true, completion: nil)
     }
-
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
+    /**
+     键盘消失
     */
+    func keyboardWillHideNotification(notification: NSNotification){
+        textView.contentInset = UIEdgeInsetsMake(0, 0, 0, 0)
+    }
+    
+    /**
+     键盘出现
+     */
+    func keyboardWillShowNotification(notification: NSNotification){
+        let rect = XKeyBoard.returnKeyBoardWindow(notification)
+        textView.contentInset = UIEdgeInsetsMake(0, 0, rect.height, 0)
+    }
 
 }

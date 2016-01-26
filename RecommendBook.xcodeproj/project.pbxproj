@@ -68,6 +68,12 @@
 		BED0333E1C5516EC00030D92 /* social-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BED0332D1C5516EC00030D92 /* social-icon@2x.png */; };
 		BED0333F1C5516EC00030D92 /* star-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BED0332E1C5516EC00030D92 /* star-icon.png */; };
 		BED033401C5516EC00030D92 /* star-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BED0332F1C5516EC00030D92 /* star-icon@2x.png */; };
+		BEF32A051C57AAA2007D1B93 /* XKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF32A041C57AAA2007D1B93 /* XKeyBoard.m */; };
+		BEF32A071C57B0BA007D1B93 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEF32A061C57B0BA007D1B93 /* Info.plist */; };
+		BEF32A081C57B2B7007D1B93 /* 隶变体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BECDF77F1C53ACB700D70D52 /* 隶变体.ttf */; };
+		BEF32A0B1C57B75F007D1B93 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BEF32A0A1C57B75F007D1B93 /* Login.storyboard */; };
+		BEF32A0D1C57BDA8007D1B93 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF32A0C1C57BDA8007D1B93 /* LoginViewController.swift */; };
+		BEF32A0F1C57BDB7007D1B93 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEF32A0E1C57BDB7007D1B93 /* RegisterViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,7 +84,6 @@
 		BECDF74A1C5314C800D70D52 /* RecommendBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecommendBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECDF74D1C5314C800D70D52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BECDF7571C5314C800D70D52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BECDF7591C5314C800D70D52 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BECDF7601C53265100D70D52 /* AVOSCloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AVOSCloud.framework; sourceTree = "<group>"; };
 		BECDF7621C5326EB00D70D52 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		BECDF7641C5326FD00D70D52 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
@@ -144,6 +149,12 @@
 		BED0332D1C5516EC00030D92 /* social-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon@2x.png"; sourceTree = "<group>"; };
 		BED0332E1C5516EC00030D92 /* star-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-icon.png"; sourceTree = "<group>"; };
 		BED0332F1C5516EC00030D92 /* star-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-icon@2x.png"; sourceTree = "<group>"; };
+		BEF32A031C57AAA2007D1B93 /* XKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKeyBoard.h; sourceTree = "<group>"; };
+		BEF32A041C57AAA2007D1B93 /* XKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XKeyBoard.m; sourceTree = "<group>"; };
+		BEF32A061C57B0BA007D1B93 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BEF32A0A1C57B75F007D1B93 /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		BEF32A0C1C57BDA8007D1B93 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BEF32A0E1C57BDB7007D1B93 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,6 +205,7 @@
 		BECDF74C1C5314C800D70D52 /* RecommendBook */ = {
 			isa = PBXGroup;
 			children = (
+				BEF32A091C57B746007D1B93 /* Login */,
 				BECDF7891C53B61A00D70D52 /* Factory */,
 				BECDF7831C53B49C00D70D52 /* PushNewBook */,
 				BECDF7711C532BC300D70D52 /* More */,
@@ -203,8 +215,8 @@
 				BECDF76D1C532B8600D70D52 /* Rank */,
 				BECDF74D1C5314C800D70D52 /* AppDelegate.swift */,
 				BECDF7561C5314C800D70D52 /* LaunchScreen.storyboard */,
+				BEF32A061C57B0BA007D1B93 /* Info.plist */,
 				BECDF77C1C5334FF00D70D52 /* Assets.xcassets */,
-				BECDF7591C5314C800D70D52 /* Info.plist */,
 				BECDF76A1C53294000D70D52 /* bridging.h */,
 				BECDF76B1C532A4B00D70D52 /* Config.swift */,
 			);
@@ -346,6 +358,7 @@
 		BECDF78E1C53C49800D70D52 /* ThirdKit */ = {
 			isa = PBXGroup;
 			children = (
+				BEF32A021C57AAA2007D1B93 /* XKeyBoard */,
 				BE40095D1C5645BC003DF790 /* IGLDropDownMenu */,
 				BED0331C1C5516EC00030D92 /* AKSegmentedControl */,
 				BED033141C54ED4100030D92 /* LDXScore */,
@@ -441,6 +454,25 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		BEF32A021C57AAA2007D1B93 /* XKeyBoard */ = {
+			isa = PBXGroup;
+			children = (
+				BEF32A031C57AAA2007D1B93 /* XKeyBoard.h */,
+				BEF32A041C57AAA2007D1B93 /* XKeyBoard.m */,
+			);
+			path = XKeyBoard;
+			sourceTree = "<group>";
+		};
+		BEF32A091C57B746007D1B93 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BEF32A0A1C57B75F007D1B93 /* Login.storyboard */,
+				BEF32A0C1C57BDA8007D1B93 /* LoginViewController.swift */,
+				BEF32A0E1C57BDB7007D1B93 /* RegisterViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -500,6 +532,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BEF32A081C57B2B7007D1B93 /* 隶变体.ttf in Resources */,
 				BECDF7AC1C53CA0B00D70D52 /* blank.png in Resources */,
 				BED033321C5516EC00030D92 /* segmented-bg-pressed-center@2x.png in Resources */,
 				BED0333E1C5516EC00030D92 /* social-icon@2x.png in Resources */,
@@ -507,9 +540,11 @@
 				BED0333B1C5516EC00030D92 /* settings-icon.png in Resources */,
 				BECDF7AE1C53CA0B00D70D52 /* Cover.png in Resources */,
 				BED033311C5516EC00030D92 /* segmented-bg-pressed-center.png in Resources */,
+				BEF32A0B1C57B75F007D1B93 /* Login.storyboard in Resources */,
 				BECDF7B61C53CA0B00D70D52 /* page4.png in Resources */,
 				BECDF7B31C53CA0B00D70D52 /* page1.png in Resources */,
 				BECDF7B71C53CA0B00D70D52 /* red_point.png in Resources */,
+				BEF32A071C57B0BA007D1B93 /* Info.plist in Resources */,
 				BED0333D1C5516EC00030D92 /* social-icon.png in Resources */,
 				BED0331A1C54ED4100030D92 /* btn_star_evaluation_press.png in Resources */,
 				BED033341C5516EC00030D92 /* segmented-bg-pressed-left@2x.png in Resources */,
@@ -556,6 +591,7 @@
 				BE4009621C5645BC003DF790 /* IGLDropDownItem.m in Sources */,
 				BED033131C54955D00030D92 /* PushDescriptionViewController.swift in Sources */,
 				BECDF7791C532E4A00D70D52 /* CircleViewController.swift in Sources */,
+				BEF32A0D1C57BDA8007D1B93 /* LoginViewController.swift in Sources */,
 				BED0330D1C5494FD00030D92 /* PushTitleViewController.swift in Sources */,
 				BE4009631C5645BC003DF790 /* IGLDropDownMenu.m in Sources */,
 				BECDF79B1C53C78C00D70D52 /* JVFloatLabeledTextView.m in Sources */,
@@ -565,7 +601,9 @@
 				BED0330F1C54950D00030D92 /* PushTypeViewController.swift in Sources */,
 				BED033111C54952300030D92 /* PushScoreViewController.swift in Sources */,
 				BECDF7881C53B4DE00D70D52 /* PushNewBookViewController.swift in Sources */,
+				BEF32A0F1C57BDB7007D1B93 /* RegisterViewController.swift in Sources */,
 				BECDF7731C532C4C00D70D52 /* RankViewController.swift in Sources */,
+				BEF32A051C57AAA2007D1B93 /* XKeyBoard.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

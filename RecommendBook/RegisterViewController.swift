@@ -1,24 +1,23 @@
 //
-//  RankViewController.swift
+//  RegisterViewController.swift
 //  RecommendBook
 //
-//  Created by 梁传飞 on 16/1/23.
+//  Created by 梁传飞 on 16/1/26.
 //  Copyright © 2016年 梁传飞. All rights reserved.
 //
 
 import UIKit
 
-class RankViewController: UIViewController {
+class RegisterViewController: UIViewController {
 
+    @IBOutlet weak var userName: UITextField!
+    @IBOutlet weak var passWord: UITextField!
+    @IBOutlet weak var eMail: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor.whiteColor()
-        
-        if AVUser.currentUser() == nil{
-            let storyBoard = UIStoryboard(name: "Login", bundle: nil)
-            let loginVC = storyBoard.instantiateViewControllerWithIdentifier("login")
-            presentViewController(loginVC, animated: true, completion: nil)
-        }
+
+        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
@@ -26,7 +25,12 @@ class RankViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func register(sender: AnyObject) {
+    }
 
+    @IBAction func close(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
     /*
     // MARK: - Navigation
 
