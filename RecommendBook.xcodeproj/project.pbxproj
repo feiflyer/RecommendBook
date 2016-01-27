@@ -68,6 +68,8 @@
 		BED0333E1C5516EC00030D92 /* social-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BED0332D1C5516EC00030D92 /* social-icon@2x.png */; };
 		BED0333F1C5516EC00030D92 /* star-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BED0332E1C5516EC00030D92 /* star-icon.png */; };
 		BED033401C5516EC00030D92 /* star-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BED0332F1C5516EC00030D92 /* star-icon@2x.png */; };
+		BEE178F61C58FF6700F05DD3 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BEE178F31C58FF6700F05DD3 /* ProgressHUD.bundle */; };
+		BEE178F71C58FF6700F05DD3 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE178F51C58FF6700F05DD3 /* ProgressHUD.m */; };
 		BEF32A051C57AAA2007D1B93 /* XKeyBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = BEF32A041C57AAA2007D1B93 /* XKeyBoard.m */; };
 		BEF32A071C57B0BA007D1B93 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BEF32A061C57B0BA007D1B93 /* Info.plist */; };
 		BEF32A081C57B2B7007D1B93 /* 隶变体.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BECDF77F1C53ACB700D70D52 /* 隶变体.ttf */; };
@@ -149,6 +151,9 @@
 		BED0332D1C5516EC00030D92 /* social-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon@2x.png"; sourceTree = "<group>"; };
 		BED0332E1C5516EC00030D92 /* star-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-icon.png"; sourceTree = "<group>"; };
 		BED0332F1C5516EC00030D92 /* star-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-icon@2x.png"; sourceTree = "<group>"; };
+		BEE178F31C58FF6700F05DD3 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		BEE178F41C58FF6700F05DD3 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		BEE178F51C58FF6700F05DD3 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		BEF32A031C57AAA2007D1B93 /* XKeyBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XKeyBoard.h; sourceTree = "<group>"; };
 		BEF32A041C57AAA2007D1B93 /* XKeyBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XKeyBoard.m; sourceTree = "<group>"; };
 		BEF32A061C57B0BA007D1B93 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -358,6 +363,7 @@
 		BECDF78E1C53C49800D70D52 /* ThirdKit */ = {
 			isa = PBXGroup;
 			children = (
+				BEE178F21C58FF6700F05DD3 /* ProgressHUD */,
 				BEF32A021C57AAA2007D1B93 /* XKeyBoard */,
 				BE40095D1C5645BC003DF790 /* IGLDropDownMenu */,
 				BED0331C1C5516EC00030D92 /* AKSegmentedControl */,
@@ -454,6 +460,16 @@
 			path = images;
 			sourceTree = "<group>";
 		};
+		BEE178F21C58FF6700F05DD3 /* ProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				BEE178F31C58FF6700F05DD3 /* ProgressHUD.bundle */,
+				BEE178F41C58FF6700F05DD3 /* ProgressHUD.h */,
+				BEE178F51C58FF6700F05DD3 /* ProgressHUD.m */,
+			);
+			path = ProgressHUD;
+			sourceTree = "<group>";
+		};
 		BEF32A021C57AAA2007D1B93 /* XKeyBoard */ = {
 			isa = PBXGroup;
 			children = (
@@ -544,6 +560,7 @@
 				BECDF7B61C53CA0B00D70D52 /* page4.png in Resources */,
 				BECDF7B31C53CA0B00D70D52 /* page1.png in Resources */,
 				BECDF7B71C53CA0B00D70D52 /* red_point.png in Resources */,
+				BEE178F61C58FF6700F05DD3 /* ProgressHUD.bundle in Resources */,
 				BEF32A071C57B0BA007D1B93 /* Info.plist in Resources */,
 				BED0333D1C5516EC00030D92 /* social-icon.png in Resources */,
 				BED0331A1C54ED4100030D92 /* btn_star_evaluation_press.png in Resources */,
@@ -587,6 +604,7 @@
 				BECDF74E1C5314C800D70D52 /* AppDelegate.swift in Sources */,
 				BED0330B1C5479FF00030D92 /* VPImageCropperViewController.m in Sources */,
 				BECDF79C1C53C78C00D70D52 /* NSString+TextDirectionality.m in Sources */,
+				BEE178F71C58FF6700F05DD3 /* ProgressHUD.m in Sources */,
 				BED033071C546A0300030D92 /* PhotoPickerController.swift in Sources */,
 				BE4009621C5645BC003DF790 /* IGLDropDownItem.m in Sources */,
 				BED033131C54955D00030D92 /* PushDescriptionViewController.swift in Sources */,
