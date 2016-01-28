@@ -12,7 +12,7 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
     var bookTitle: BookTitle!
     var tableView: UITableView!
     var titleArray = ["标题" , "评分" , "分类" , "书评"]
-    var bookDetail = ""
+    var bookTitleString = ""
     var score: LDXScore!
     
     //是否显示评分条
@@ -60,7 +60,23 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
     }
     
     func sure(){
-          dismissViewControllerAnimated(true, completion: nil)
+        var dict = Dictionary<String , AnyObject>()
+  dict["BookName"] = self.bookTitle.bookName!.text
+        
+        
+        let dict1 = [
+            "BookName":self.bookTitle.bookName!.text,
+            "BookEditor":self.bookTitle.bookEditor!.text,
+            "title":self.bookTitleString,
+            "type":self.type,
+            "detailType":self.detailType,
+            "description":self.bookDescription ]
+
+        
+        ProgressHUD.show("")
+        
+    
+
     }
     
     /**
@@ -122,7 +138,7 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
         }
         switch row{
         case 0:
-            cell.detailTextLabel?.text = bookDetail
+            cell.detailTextLabel?.text = bookTitleString
             break
             
         case 2:
@@ -209,7 +225,7 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
         let pushTitleController = PushTitleViewController()
         pushTitleController.callBack = {
             (title) -> Void in
-            self.bookDetail = title
+            self.bookTitleString = title
             self.tableView.reloadData()
         }
         TitleGeneralFactory.addTitle(pushTitleController)
