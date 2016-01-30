@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		BE4009621C5645BC003DF790 /* IGLDropDownItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BE40095F1C5645BC003DF790 /* IGLDropDownItem.m */; };
 		BE4009631C5645BC003DF790 /* IGLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4009611C5645BC003DF790 /* IGLDropDownMenu.m */; };
+		BE4204291C5C571900469350 /* PushnBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4204281C5C571900469350 /* PushnBook.swift */; };
 		BECDF74E1C5314C800D70D52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF74D1C5314C800D70D52 /* AppDelegate.swift */; };
 		BECDF7581C5314C800D70D52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7561C5314C800D70D52 /* LaunchScreen.storyboard */; };
 		BECDF7611C53265100D70D52 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECDF7601C53265100D70D52 /* AVOSCloud.framework */; };
@@ -83,6 +84,7 @@
 		BE40095F1C5645BC003DF790 /* IGLDropDownItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLDropDownItem.m; sourceTree = "<group>"; };
 		BE4009601C5645BC003DF790 /* IGLDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGLDropDownMenu.h; sourceTree = "<group>"; };
 		BE4009611C5645BC003DF790 /* IGLDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLDropDownMenu.m; sourceTree = "<group>"; };
+		BE4204281C5C571900469350 /* PushnBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushnBook.swift; sourceTree = "<group>"; };
 		BECDF74A1C5314C800D70D52 /* RecommendBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecommendBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECDF74D1C5314C800D70D52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BECDF7571C5314C800D70D52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -327,6 +329,7 @@
 		BECDF7841C53B4AD00D70D52 /* M */ = {
 			isa = PBXGroup;
 			children = (
+				BE4204281C5C571900469350 /* PushnBook.swift */,
 			);
 			name = M;
 			sourceTree = "<group>";
@@ -618,6 +621,7 @@
 				BECDF7771C532E3200D70D52 /* PushViewController.swift in Sources */,
 				BED0330F1C54950D00030D92 /* PushTypeViewController.swift in Sources */,
 				BED033111C54952300030D92 /* PushScoreViewController.swift in Sources */,
+				BE4204291C5C571900469350 /* PushnBook.swift in Sources */,
 				BECDF7881C53B4DE00D70D52 /* PushNewBookViewController.swift in Sources */,
 				BEF32A0F1C57BDB7007D1B93 /* RegisterViewController.swift in Sources */,
 				BECDF7731C532C4C00D70D52 /* RankViewController.swift in Sources */,

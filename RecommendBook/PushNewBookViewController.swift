@@ -46,6 +46,9 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
         score.highlightImg = UIImage(named: "btn_star_evaluation_press")
         score.max_star = 5
         score.show_star = 5
+        
+        //注册一个通知
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: Selector("pushBookNotification:"), name: "pushBookNotification", object: nil)
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,21 +64,18 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
     
     func sure(){
         var dict = Dictionary<String , AnyObject>()
-  dict["BookName"] = self.bookTitle.bookName!.text
-        
-        
-        let dict1 = [
-            "BookName":self.bookTitle.bookName!.text,
-            "BookEditor":self.bookTitle.bookEditor!.text,
-            "title":self.bookTitleString,
-            "type":self.type,
-            "detailType":self.detailType,
-            "description":self.bookDescription ]
-
+            dict["BookName"] = self.bookTitle.bookName!.text
+            dict["BookEditor"] = self.bookTitle.bookEditor!.text
+            dict["BookCover"] = self.bookTitle.bookCover?.currentImage
+            dict["title"] = self.bookTitleString
+            dict["type"] = type
+            dict["score"] = score.show_star
+            dict["detailType"] = detailType
+            dict["description"] = description
         
         ProgressHUD.show("")
         
-    
+        PushnBook.pushBookInBackgroound(dict)
 
     }
     
@@ -300,10 +300,24 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
         TitleGeneralFactory.addTitle(pushDescriptionController)
         presentViewController(pushDescriptionController, animated: true, completion: nil)
     }
+    
+    //通知
+    func pushBookNotification(notification: NSNotification){
+        let dict = notification.userInfo
+        if String(dict!["success"]!) == "true"{
+            ProgressHUD.showSuccess("上传成功")
+            self.dismissViewControllerAnimated(true, completion: nil)
+        }else{
+            ProgressHUD.showError("上传失败")
+        }
+        
+    }
 
     //析构函数
     deinit{
         print("deinit----")
+        //移除通知
+        NSNotificationCenter.defaultCenter().removeObserver(self)
     }
 
 
