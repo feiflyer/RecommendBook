@@ -8,19 +8,30 @@
 
 import UIKit
 
-class PushViewController: UIViewController {
+class PushViewController: UIViewController ,UITableViewDataSource , UITableViewDelegate{
+    var dataArray: Array<AVObject> = []
+    var tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         self.view.backgroundColor = UIColor.whiteColor()
         setNavigationBar()
+        tableView = UITableView(frame: view.frame)
+        tableView.delegate = self
+        tableView.dataSource = self
+        //除去多余的分割线
+        tableView.tableFooterView = UIView()
+        tableView.registerClass(PushBookCellTableViewCell.classForCoder(), forCellReuseIdentifier: "cell")
+        view.addSubview(tableView)
         
+        tableView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: Selector("headerRefresh"))
+        tableView.mj_footer = MJRefreshBackNormalFooter(refreshingTarget: self, refreshingAction: Selector("footerRefresh"))
+        tableView.mj_header.beginRefreshing()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
       //设置标题栏
@@ -44,8 +55,73 @@ class PushViewController: UIViewController {
         print("新建书评")
         let pusnNewBookController = PushNewBookViewController()
         presentViewController(pusnNewBookController, animated: true, completion: nil)
+    }
+    
+    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+        let cell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! PushBookCellTableViewCell
         
+        let dict = self.dataArray[indexPath.row] as? AVObject
         
+        cell.bookName?.text = "《"+(dict!["BookName"] as! String)+"》:"+(dict!["title"] as! String)
+        cell.editor?.text = "作者:"+(dict!["BookEditor"] as! String)
+        
+        let date = dict!["createdAt"] as? NSDate
+        let format = NSDateFormatter()
+        format.dateFormat = "yyyy-MM-dd hh:mm"
+        cell.more?.text = format.stringFromDate(date!)
+        
+        let coverFile = dict!["cover"] as? AVFile
+        cell.cover?.sd_setImageWithURL(NSURL(string: (coverFile?.url)!), placeholderImage: UIImage(named: "Cover"))
+        return cell
+    }
+    
+    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataArray.count
+    }
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
+        return 1;
+    }
+    
+    func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        return 88
+    }
+    
+    //下拉刷新
+    func headerRefresh(){
+        let query = AVQuery(className: "Book")
+        query.orderByDescending("createdAt")
+        query.limit = 20
+        query.skip = 0
+        query.whereKey("user", equalTo: AVUser.currentUser())
+        query.findObjectsInBackgroundWithBlock { (results, error) -> Void in
+            self.tableView?.mj_header.endRefreshing()
+            
+        self.dataArray.removeAll()
+            for data in results{
+                 self.dataArray.append(data as! AVObject)
+            }
+        self.tableView?.reloadData()
+            
+        }
+    }
+    
+    //上拉加载
+    func footerRefresh(){
+        let query = AVQuery(className: "Book")
+        query.orderByDescending("createdAt")
+        query.limit = 20
+        //跳过几个对象
+        query.skip = self.dataArray.count
+        query.whereKey("user", equalTo: AVUser.currentUser())
+        query.findObjectsInBackgroundWithBlock { (results, error) -> Void in
+        self.tableView?.mj_footer.endRefreshing()
+            for data in results{
+                self.dataArray.append(data as! AVObject)
+            }
+        self.tableView?.reloadData()
+            
+        }
     }
 
 }
