@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         /**
         设置LeanCloud
         */
-         AVOSCloud.setApplicationId("i40Bw8oWkFemep2Rn2k9e5WX", clientKey: "MpeDsXwLTcQuuhplDjN1Hs8l")
+         AVOSCloud.setApplicationId("PdpHPO9lIHB05Vf67M52WsYu-gzGzoHsz", clientKey: "XM6RWNgAPxddO7MjOwNX8Kdq")
         
         self.window = UIWindow(frame: CGRectMake(0,0,SCREEN_WIDTH , SCREEN_HIGHT))
         

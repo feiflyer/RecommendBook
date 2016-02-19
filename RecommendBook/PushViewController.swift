@@ -87,6 +87,17 @@ class PushViewController: UIViewController ,UITableViewDataSource , UITableViewD
         return 88
     }
     
+    //item的点击事件
+    func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        //取消点击效果
+        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+        let vc = BookDetailViewController()
+        vc.bookObject = dataArray[indexPath.row]
+        //隐藏tableBar
+        vc.hidesBottomBarWhenPushed = true
+        navigationController?.pushViewController(vc, animated: true)
+    }
+    
     //下拉刷新
     func headerRefresh(){
         let query = AVQuery(className: "Book")
@@ -98,8 +109,10 @@ class PushViewController: UIViewController ,UITableViewDataSource , UITableViewD
             self.tableView?.mj_header.endRefreshing()
             
         self.dataArray.removeAll()
-            for data in results{
-                 self.dataArray.append(data as! AVObject)
+            if results != nil{
+                for data in results{
+                    self.dataArray.append(data as! AVObject)
+                }
             }
         self.tableView?.reloadData()
             
@@ -116,8 +129,10 @@ class PushViewController: UIViewController ,UITableViewDataSource , UITableViewD
         query.whereKey("user", equalTo: AVUser.currentUser())
         query.findObjectsInBackgroundWithBlock { (results, error) -> Void in
         self.tableView?.mj_footer.endRefreshing()
-            for data in results{
-                self.dataArray.append(data as! AVObject)
+            if results != nil{
+                for data in results{
+                    self.dataArray.append(data as! AVObject)
+                }
             }
         self.tableView?.reloadData()
             

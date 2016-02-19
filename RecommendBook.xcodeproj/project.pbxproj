@@ -90,6 +90,7 @@
 		BED033401C5516EC00030D92 /* star-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BED0332F1C5516EC00030D92 /* star-icon@2x.png */; };
 		BEE178F61C58FF6700F05DD3 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BEE178F31C58FF6700F05DD3 /* ProgressHUD.bundle */; };
 		BEE178F71C58FF6700F05DD3 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE178F51C58FF6700F05DD3 /* ProgressHUD.m */; };
+		BEEC2D301C774DC300DFE924 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2D2F1C774DC300DFE924 /* BookDetailViewController.swift */; };
 		BEEC550A1C74B2F7009FDD55 /* PushBookCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC55091C74B2F7009FDD55 /* PushBookCellTableViewCell.swift */; };
 		BEEC552D1C74BFA8009FDD55 /* MKAnnotationView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC550D1C74BFA8009FDD55 /* MKAnnotationView+WebCache.m */; };
 		BEEC552E1C74BFA8009FDD55 /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = BEEC550F1C74BFA8009FDD55 /* NSData+ImageContentType.m */; };
@@ -230,6 +231,7 @@
 		BEE178F31C58FF6700F05DD3 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		BEE178F41C58FF6700F05DD3 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		BEE178F51C58FF6700F05DD3 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
+		BEEC2D2F1C774DC300DFE924 /* BookDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailViewController.swift; sourceTree = "<group>"; };
 		BEEC55091C74B2F7009FDD55 /* PushBookCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushBookCellTableViewCell.swift; sourceTree = "<group>"; };
 		BEEC550C1C74BFA8009FDD55 /* MKAnnotationView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MKAnnotationView+WebCache.h"; sourceTree = "<group>"; };
 		BEEC550D1C74BFA8009FDD55 /* MKAnnotationView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MKAnnotationView+WebCache.m"; sourceTree = "<group>"; };
@@ -413,6 +415,7 @@
 		BECDF74C1C5314C800D70D52 /* RecommendBook */ = {
 			isa = PBXGroup;
 			children = (
+				BEEC2D2B1C774D0800DFE924 /* BookDetail */,
 				BEF32A091C57B746007D1B93 /* Login */,
 				BECDF7891C53B61A00D70D52 /* Factory */,
 				BECDF7831C53B49C00D70D52 /* PushNewBook */,
@@ -677,6 +680,38 @@
 			path = ProgressHUD;
 			sourceTree = "<group>";
 		};
+		BEEC2D2B1C774D0800DFE924 /* BookDetail */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC2D2E1C774D6100DFE924 /* C */,
+				BEEC2D2D1C774D5A00DFE924 /* V */,
+				BEEC2D2C1C774D5100DFE924 /* M */,
+			);
+			path = BookDetail;
+			sourceTree = "<group>";
+		};
+		BEEC2D2C1C774D5100DFE924 /* M */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = M;
+			sourceTree = "<group>";
+		};
+		BEEC2D2D1C774D5A00DFE924 /* V */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = V;
+			sourceTree = "<group>";
+		};
+		BEEC2D2E1C774D6100DFE924 /* C */ = {
+			isa = PBXGroup;
+			children = (
+				BEEC2D2F1C774DC300DFE924 /* BookDetailViewController.swift */,
+			);
+			name = C;
+			sourceTree = "<group>";
+		};
 		BEEC550B1C74BFA8009FDD55 /* SDWebImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -847,6 +882,7 @@
 				BEEC55351C74BFA8009FDD55 /* SDWebImagePrefetcher.m in Sources */,
 				BECDF78B1C53B66F00D70D52 /* TitleGeneralFactory.swift in Sources */,
 				BEEC553A1C74BFA8009FDD55 /* UIImageView+HighlightedWebCache.m in Sources */,
+				BEEC2D301C774DC300DFE924 /* BookDetailViewController.swift in Sources */,
 				BE42045C1C5C664400469350 /* MJRefreshAutoGifFooter.m in Sources */,
 				BE4204611C5C664400469350 /* MJRefreshBackStateFooter.m in Sources */,
 				BE4204691C5C664400469350 /* UIView+MJExtension.m in Sources */,
