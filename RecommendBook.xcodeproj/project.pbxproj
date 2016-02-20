@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		BE4009621C5645BC003DF790 /* IGLDropDownItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BE40095F1C5645BC003DF790 /* IGLDropDownItem.m */; };
 		BE4009631C5645BC003DF790 /* IGLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4009611C5645BC003DF790 /* IGLDropDownMenu.m */; };
-		BE4204291C5C571900469350 /* PushnBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4204281C5C571900469350 /* PushnBook.swift */; };
+		BE4204291C5C571900469350 /* PushBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4204281C5C571900469350 /* PushBook.swift */; };
 		BE4204571C5C664400469350 /* MJRefreshAutoFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE42042D1C5C664400469350 /* MJRefreshAutoFooter.m */; };
 		BE4204581C5C664400469350 /* MJRefreshBackFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = BE42042F1C5C664400469350 /* MJRefreshBackFooter.m */; };
 		BE4204591C5C664400469350 /* MJRefreshComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4204311C5C664400469350 /* MJRefreshComponent.m */; };
@@ -121,7 +121,7 @@
 		BE40095F1C5645BC003DF790 /* IGLDropDownItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLDropDownItem.m; sourceTree = "<group>"; };
 		BE4009601C5645BC003DF790 /* IGLDropDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGLDropDownMenu.h; sourceTree = "<group>"; };
 		BE4009611C5645BC003DF790 /* IGLDropDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLDropDownMenu.m; sourceTree = "<group>"; };
-		BE4204281C5C571900469350 /* PushnBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushnBook.swift; sourceTree = "<group>"; };
+		BE4204281C5C571900469350 /* PushBook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushBook.swift; sourceTree = "<group>"; };
 		BE42042C1C5C664400469350 /* MJRefreshAutoFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshAutoFooter.h; sourceTree = "<group>"; };
 		BE42042D1C5C664400469350 /* MJRefreshAutoFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJRefreshAutoFooter.m; sourceTree = "<group>"; };
 		BE42042E1C5C664400469350 /* MJRefreshBackFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJRefreshBackFooter.h; sourceTree = "<group>"; };
@@ -534,7 +534,7 @@
 		BECDF7841C53B4AD00D70D52 /* M */ = {
 			isa = PBXGroup;
 			children = (
-				BE4204281C5C571900469350 /* PushnBook.swift */,
+				BE4204281C5C571900469350 /* PushBook.swift */,
 			);
 			name = M;
 			sourceTree = "<group>";
@@ -932,7 +932,7 @@
 				BED033111C54952300030D92 /* PushScoreViewController.swift in Sources */,
 				BEEC55381C74BFA8009FDD55 /* UIImage+MultiFormat.m in Sources */,
 				BEEC553C1C74BFA8009FDD55 /* UIView+WebCacheOperation.m in Sources */,
-				BE4204291C5C571900469350 /* PushnBook.swift in Sources */,
+				BE4204291C5C571900469350 /* PushBook.swift in Sources */,
 				BECDF7881C53B4DE00D70D52 /* PushNewBookViewController.swift in Sources */,
 				BEF32A0F1C57BDB7007D1B93 /* RegisterViewController.swift in Sources */,
 				BE4204641C5C664400469350 /* MJRefreshStateHeader.m in Sources */,

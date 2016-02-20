@@ -8,9 +8,8 @@
 
 import UIKit
 
-class PushnBook: NSObject {
-    static func pushBookInBackgroound(dict: Dictionary<String , AnyObject>){
-        let object = AVObject()
+class PushBook: NSObject {
+    static func pushBookInBackgroound(dict: Dictionary<String , AnyObject> , object: AVObject){
         object.setObject(dict["BookName"], forKey: "BookName")
         object.setObject(dict["BookEditor"], forKey: "BookEditor")
         object.setObject(dict["title"], forKey: "title")

@@ -21,6 +21,10 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
     var type = "文学"
     var detailType = "文学"
     var bookDescription = ""
+    
+    /// 编辑
+    var BookObject:AVObject?
+    var fixType:String?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -75,8 +79,32 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
         
         ProgressHUD.show("")
         
-        PushnBook.pushBookInBackgroound(dict)
-
+        let object = AVObject(className: "Book")
+        PushBook.pushBookInBackgroound(dict, object: object)
+        
+    }
+    
+    /**
+     编辑
+     */
+    func fixBook(){
+        if self.fixType == "fix" {
+            bookTitle.bookName?.text = self.BookObject!["BookName"] as? String
+            bookTitle.bookEditor?.text = self.BookObject!["BookEditor"] as? String
+            let coverFile = self.BookObject!["cover"] as? AVFile
+            coverFile?.getDataInBackgroundWithBlock({ (data, error) -> Void in
+                self.bookTitle.bookCover?.setImage(UIImage(data: data), forState: .Normal)
+            })
+            
+            bookTitleString = (self.BookObject!["title"] as? String)!
+            type = (self.BookObject!["type"] as? String)!
+            detailType = (self.BookObject!["detailType"] as? String)!
+            bookDescription = (self.BookObject!["description"] as? String)!
+            score.show_star = (Int)((self.BookObject!["score"] as? String)!)!
+            if bookDescription != "" {
+                self.titleArray.append("")
+            }
+        }
     }
     
     /**
