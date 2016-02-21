@@ -10,3 +10,4 @@
 #import "ProgressHUD.h"
 #import "MJRefresh.h"
 #import "UIImageView+WebCache.h"
+#import "InputView.h"

@@ -75,7 +75,7 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
             dict["type"] = type
             dict["score"] = score.show_star
             dict["detailType"] = detailType
-            dict["description"] = description
+            dict["description"] = bookDescription
         
         ProgressHUD.show("")
         

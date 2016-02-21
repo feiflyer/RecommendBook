@@ -49,6 +49,7 @@ class BookTabBar: UIView {
             CGContextMoveToPoint(context, CGFloat(i)*rect.size.width/4, rect.size.height*0.1)
             CGContextAddLineToPoint(context, CGFloat(i)*rect.size.width/4, rect.size.height*0.9)
         }
+        //顶部的横线
         CGContextMoveToPoint(context, 8, 0)
         CGContextAddLineToPoint(context, rect.size.width - 8, 0)
         CGContextStrokePath(context)

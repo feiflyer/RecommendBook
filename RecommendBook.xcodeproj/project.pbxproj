@@ -31,6 +31,11 @@
 		BE4204691C5C664400469350 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4204561C5C664400469350 /* UIView+MJExtension.m */; };
 		BE4BCE3A1C79AD3900874964 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BCE391C79AD3900874964 /* BookDetailView.swift */; };
 		BE4BCE3C1C79BB8700874964 /* BookTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BCE3B1C79BB8700874964 /* BookTabBar.swift */; };
+		BE4BCE431C79E63A00874964 /* InputView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4BCE3F1C79E63A00874964 /* InputView.m */; };
+		BE4BCE441C79E63A00874964 /* InputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE4BCE401C79E63A00874964 /* InputView.xib */; };
+		BE4BCE451C79E63A00874964 /* UIViewExt.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4BCE421C79E63A00874964 /* UIViewExt.m */; };
+		BE4BCE471C79F72500874964 /* CommnentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BCE461C79F72500874964 /* CommnentViewController.swift */; };
+		BE4BCE491C79F9DA00874964 /* DiscussCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BCE481C79F9DA00874964 /* DiscussCell.swift */; };
 		BECDF74E1C5314C800D70D52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF74D1C5314C800D70D52 /* AppDelegate.swift */; };
 		BECDF7581C5314C800D70D52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7561C5314C800D70D52 /* LaunchScreen.storyboard */; };
 		BECDF7611C53265100D70D52 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECDF7601C53265100D70D52 /* AVOSCloud.framework */; };
@@ -164,6 +169,13 @@
 		BE4204561C5C664400469350 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
 		BE4BCE391C79AD3900874964 /* BookDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 		BE4BCE3B1C79BB8700874964 /* BookTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTabBar.swift; sourceTree = "<group>"; };
+		BE4BCE3E1C79E63A00874964 /* InputView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputView.h; sourceTree = "<group>"; };
+		BE4BCE3F1C79E63A00874964 /* InputView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InputView.m; sourceTree = "<group>"; };
+		BE4BCE401C79E63A00874964 /* InputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InputView.xib; sourceTree = "<group>"; };
+		BE4BCE411C79E63A00874964 /* UIViewExt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIViewExt.h; sourceTree = "<group>"; };
+		BE4BCE421C79E63A00874964 /* UIViewExt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIViewExt.m; sourceTree = "<group>"; };
+		BE4BCE461C79F72500874964 /* CommnentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommnentViewController.swift; sourceTree = "<group>"; };
+		BE4BCE481C79F9DA00874964 /* DiscussCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscussCell.swift; sourceTree = "<group>"; };
 		BECDF74A1C5314C800D70D52 /* RecommendBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecommendBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECDF74D1C5314C800D70D52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BECDF7571C5314C800D70D52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -398,6 +410,18 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		BE4BCE3D1C79E63A00874964 /* InputView */ = {
+			isa = PBXGroup;
+			children = (
+				BE4BCE3E1C79E63A00874964 /* InputView.h */,
+				BE4BCE3F1C79E63A00874964 /* InputView.m */,
+				BE4BCE401C79E63A00874964 /* InputView.xib */,
+				BE4BCE411C79E63A00874964 /* UIViewExt.h */,
+				BE4BCE421C79E63A00874964 /* UIViewExt.m */,
+			);
+			path = InputView;
+			sourceTree = "<group>";
+		};
 		BECDF7411C5314C800D70D52 = {
 			isa = PBXGroup;
 			children = (
@@ -575,6 +599,7 @@
 		BECDF78E1C53C49800D70D52 /* ThirdKit */ = {
 			isa = PBXGroup;
 			children = (
+				BE4BCE3D1C79E63A00874964 /* InputView */,
 				BEEC550B1C74BFA8009FDD55 /* SDWebImage */,
 				BE42042A1C5C664400469350 /* MJRefresh */,
 				BEE178F21C58FF6700F05DD3 /* ProgressHUD */,
@@ -706,6 +731,7 @@
 			children = (
 				BE4BCE391C79AD3900874964 /* BookDetailView.swift */,
 				BE4BCE3B1C79BB8700874964 /* BookTabBar.swift */,
+				BE4BCE481C79F9DA00874964 /* DiscussCell.swift */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -714,6 +740,7 @@
 			isa = PBXGroup;
 			children = (
 				BEEC2D2F1C774DC300DFE924 /* BookDetailViewController.swift */,
+				BE4BCE461C79F72500874964 /* CommnentViewController.swift */,
 			);
 			name = C;
 			sourceTree = "<group>";
@@ -862,6 +889,7 @@
 				BECDF7AF1C53CA0B00D70D52 /* ear1.png in Resources */,
 				BED033381C5516EC00030D92 /* segmented-bg@2x.png in Resources */,
 				BED033331C5516EC00030D92 /* segmented-bg-pressed-left.png in Resources */,
+				BE4BCE441C79E63A00874964 /* InputView.xib in Resources */,
 				BED033361C5516EC00030D92 /* segmented-bg-pressed-right@2x.png in Resources */,
 				BECDF7B01C53CA0B00D70D52 /* ear2.png in Resources */,
 				BED0333C1C5516EC00030D92 /* settings-icon@2x.png in Resources */,
@@ -896,9 +924,11 @@
 				BE42045A1C5C664400469350 /* MJRefreshFooter.m in Sources */,
 				BEEC55391C74BFA8009FDD55 /* UIImage+WebP.m in Sources */,
 				BED0331B1C54ED4100030D92 /* LDXScore.m in Sources */,
+				BE4BCE431C79E63A00874964 /* InputView.m in Sources */,
 				BECDF77B1C532E5D00D70D52 /* MoreViewController.swift in Sources */,
 				BE4204571C5C664400469350 /* MJRefreshAutoFooter.m in Sources */,
 				BEEC550A1C74B2F7009FDD55 /* PushBookCellTableViewCell.swift in Sources */,
+				BE4BCE451C79E63A00874964 /* UIViewExt.m in Sources */,
 				BED033301C5516EC00030D92 /* AKSegmentedControl.m in Sources */,
 				BEEC553B1C74BFA8009FDD55 /* UIImageView+WebCache.m in Sources */,
 				BE4204671C5C664400469350 /* UIScrollView+MJExtension.m in Sources */,
@@ -935,6 +965,7 @@
 				BEEC55371C74BFA8009FDD55 /* UIImage+GIF.m in Sources */,
 				BE42045D1C5C664400469350 /* MJRefreshAutoNormalFooter.m in Sources */,
 				BE42045F1C5C664400469350 /* MJRefreshBackGifFooter.m in Sources */,
+				BE4BCE471C79F72500874964 /* CommnentViewController.swift in Sources */,
 				BED0330F1C54950D00030D92 /* PushTypeViewController.swift in Sources */,
 				BEEC55331C74BFA8009FDD55 /* SDWebImageDownloaderOperation.m in Sources */,
 				BED033111C54952300030D92 /* PushScoreViewController.swift in Sources */,
@@ -949,6 +980,7 @@
 				BEF32A051C57AAA2007D1B93 /* XKeyBoard.m in Sources */,
 				BE4204631C5C664400469350 /* MJRefreshNormalHeader.m in Sources */,
 				BE4204591C5C664400469350 /* MJRefreshComponent.m in Sources */,
+				BE4BCE491C79F9DA00874964 /* DiscussCell.swift in Sources */,
 				BEEC552F1C74BFA8009FDD55 /* SDImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
