@@ -61,6 +61,7 @@ class CommnentViewController: UIViewController , UITableViewDataSource , UITable
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.tableView?.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as? DiscussCell
+         //此时cell的高度时计算好的
         cell?.initFrame()
         let object = commentArray[indexPath.row]
         
@@ -83,6 +84,7 @@ class CommnentViewController: UIViewController , UITableViewDataSource , UITable
     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
         let object = commentArray[indexPath.row]
         let text = object["text"] as? NSString
+        //计算文字
         let textSize = text?.boundingRectWithSize(CGSizeMake(SCREEN_WIDTH-56-8,0), options: .UsesLineFragmentOrigin, attributes: [NSFontAttributeName:UIFont.systemFontOfSize(15)], context: nil).size
         
         return (textSize?.height)! + 30 + 25
