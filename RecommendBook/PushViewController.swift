@@ -11,6 +11,7 @@ import UIKit
 class PushViewController: UIViewController ,UITableViewDataSource , UITableViewDelegate{
     var dataArray: Array<AVObject> = []
     var tableView: UITableView!
+    var navigationBar: UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,14 @@ class PushViewController: UIViewController ,UITableViewDataSource , UITableViewD
         tableView.mj_footer = MJRefreshBackNormalFooter(refreshingTarget: self, refreshingAction: Selector("footerRefresh"))
         tableView.mj_header.beginRefreshing()
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        navigationBar.hidden = false
+    }
+    
+    override func viewWillDisappear(animated: Bool) {
+         navigationBar.hidden = true
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -36,7 +45,7 @@ class PushViewController: UIViewController ,UITableViewDataSource , UITableViewD
     
       //设置标题栏
     func setNavigationBar(){
-        let navigationBar = UIView(frame: CGRectMake(0 , -20 , SCREEN_WIDTH , 65))
+        navigationBar = UIView(frame: CGRectMake(0 , -20 , SCREEN_WIDTH , 65))
         self.navigationController?.navigationBar.addSubview(navigationBar)
         
         let bookAddBtn = UIButton(frame: CGRectMake(20, 20, SCREEN_WIDTH, 45))
@@ -60,17 +69,17 @@ class PushViewController: UIViewController ,UITableViewDataSource , UITableViewD
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = self.tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! PushBookCellTableViewCell
         
-        let dict = self.dataArray[indexPath.row] as? AVObject
+        let dict = self.dataArray[indexPath.row]
         
-        cell.bookName?.text = "《"+(dict!["BookName"] as! String)+"》:"+(dict!["title"] as! String)
-        cell.editor?.text = "作者:"+(dict!["BookEditor"] as! String)
+        cell.bookName?.text = "《"+(dict["BookName"] as! String)+"》:"+(dict["title"] as! String)
+        cell.editor?.text = "作者:"+(dict["BookEditor"] as! String)
         
-        let date = dict!["createdAt"] as? NSDate
+        let date = dict["createdAt"] as? NSDate
         let format = NSDateFormatter()
         format.dateFormat = "yyyy-MM-dd hh:mm"
         cell.more?.text = format.stringFromDate(date!)
         
-        let coverFile = dict!["cover"] as? AVFile
+        let coverFile = dict["cover"] as? AVFile
         cell.cover?.sd_setImageWithURL(NSURL(string: (coverFile?.url)!), placeholderImage: UIImage(named: "Cover"))
         return cell
     }

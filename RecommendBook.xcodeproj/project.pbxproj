@@ -29,6 +29,8 @@
 		BE4204671C5C664400469350 /* UIScrollView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4204521C5C664400469350 /* UIScrollView+MJExtension.m */; };
 		BE4204681C5C664400469350 /* UIScrollView+MJRefresh.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4204541C5C664400469350 /* UIScrollView+MJRefresh.m */; };
 		BE4204691C5C664400469350 /* UIView+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4204561C5C664400469350 /* UIView+MJExtension.m */; };
+		BE4BCE3A1C79AD3900874964 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BCE391C79AD3900874964 /* BookDetailView.swift */; };
+		BE4BCE3C1C79BB8700874964 /* BookTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE4BCE3B1C79BB8700874964 /* BookTabBar.swift */; };
 		BECDF74E1C5314C800D70D52 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BECDF74D1C5314C800D70D52 /* AppDelegate.swift */; };
 		BECDF7581C5314C800D70D52 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BECDF7561C5314C800D70D52 /* LaunchScreen.storyboard */; };
 		BECDF7611C53265100D70D52 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BECDF7601C53265100D70D52 /* AVOSCloud.framework */; };
@@ -160,6 +162,8 @@
 		BE4204541C5C664400469350 /* UIScrollView+MJRefresh.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+MJRefresh.m"; sourceTree = "<group>"; };
 		BE4204551C5C664400469350 /* UIView+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+MJExtension.h"; sourceTree = "<group>"; };
 		BE4204561C5C664400469350 /* UIView+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+MJExtension.m"; sourceTree = "<group>"; };
+		BE4BCE391C79AD3900874964 /* BookDetailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
+		BE4BCE3B1C79BB8700874964 /* BookTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BookTabBar.swift; sourceTree = "<group>"; };
 		BECDF74A1C5314C800D70D52 /* RecommendBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RecommendBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BECDF74D1C5314C800D70D52 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BECDF7571C5314C800D70D52 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -700,6 +704,8 @@
 		BEEC2D2D1C774D5A00DFE924 /* V */ = {
 			isa = PBXGroup;
 			children = (
+				BE4BCE391C79AD3900874964 /* BookDetailView.swift */,
+				BE4BCE3B1C79BB8700874964 /* BookTabBar.swift */,
 			);
 			name = V;
 			sourceTree = "<group>";
@@ -880,6 +886,7 @@
 			files = (
 				BEEC55311C74BFA8009FDD55 /* SDWebImageDecoder.m in Sources */,
 				BEEC55351C74BFA8009FDD55 /* SDWebImagePrefetcher.m in Sources */,
+				BE4BCE3C1C79BB8700874964 /* BookTabBar.swift in Sources */,
 				BECDF78B1C53B66F00D70D52 /* TitleGeneralFactory.swift in Sources */,
 				BEEC553A1C74BFA8009FDD55 /* UIImageView+HighlightedWebCache.m in Sources */,
 				BEEC2D301C774DC300DFE924 /* BookDetailViewController.swift in Sources */,
@@ -915,6 +922,7 @@
 				BE4204681C5C664400469350 /* UIScrollView+MJRefresh.m in Sources */,
 				BEEC55361C74BFA8009FDD55 /* UIButton+WebCache.m in Sources */,
 				BEEC55301C74BFA8009FDD55 /* SDWebImageCompat.m in Sources */,
+				BE4BCE3A1C79AD3900874964 /* BookDetailView.swift in Sources */,
 				BE4204601C5C664400469350 /* MJRefreshBackNormalFooter.m in Sources */,
 				BE4009631C5645BC003DF790 /* IGLDropDownMenu.m in Sources */,
 				BE4204581C5C664400469350 /* MJRefreshBackFooter.m in Sources */,
