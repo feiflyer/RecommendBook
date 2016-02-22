@@ -8,10 +8,17 @@
 
 import UIKit
 
-class CommnentViewController: UIViewController , UITableViewDataSource , UITableViewDelegate{
+class CommnentViewController: UIViewController , UITableViewDataSource , UITableViewDelegate , InputViewDelegate{
     var bookObject: AVObject?
     var tableView: UITableView!
     var commentArray = [AVObject]()
+    
+    var input:InputView?
+    
+    var layView:UIView?
+    
+    var keyBoardHeight:CGFloat = 0.0
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +46,18 @@ class CommnentViewController: UIViewController , UITableViewDataSource , UITable
         self.tableView?.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: "headerRefresh")
         self.tableView?.mj_footer = MJRefreshBackNormalFooter(refreshingTarget: self, refreshingAction: "footerRefresh")
         
+        self.input = NSBundle.mainBundle().loadNibNamed("InputView", owner: self, options: nil).last as? InputView
+        self.input?.frame = CGRectMake(0,SCREEN_HIGHT-44,SCREEN_WIDTH,44)
+        self.input?.delegate = self
+        self.view.addSubview(self.input!)
+        
+        self.layView = UIView(frame: self.view.frame)
+        self.layView?.backgroundColor = UIColor.grayColor()
+        self.layView?.alpha = 0
+        let tap = UITapGestureRecognizer(target: self, action: Selector("tapLayView"))
+        self.layView?.addGestureRecognizer(tap)
+        self.view.insertSubview(self.layView!, belowSubview: self.input!)
+
 
     }
     //关闭按钮点击事件
@@ -46,6 +65,10 @@ class CommnentViewController: UIViewController , UITableViewDataSource , UITable
         self.dismissViewControllerAnimated(true) { () -> Void in
             
         }
+    }
+    
+    func tapLayView(){
+        input?.inputTextView?.resignFirstResponder()
     }
     
     /**
@@ -129,6 +152,57 @@ class CommnentViewController: UIViewController , UITableViewDataSource , UITable
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    /**
+     *  InputViewDelegate
+     */
+    func textViewHeightDidChange(height: CGFloat) {
+        self.input?.height = height+10
+        self.input?.bottom = SCREEN_HIGHT - self.keyBoardHeight
+    }
+    
+    func publishButtonDidClick(button: UIButton!) {
+        ProgressHUD.show("")
+        
+        let object = AVObject(className: "discuss")
+        object.setObject(self.input?.inputTextView?.text, forKey: "text")
+        object.setObject(AVUser.currentUser(), forKey: "user")
+        object.setObject(bookObject, forKey: "BookObject")
+        object.saveInBackgroundWithBlock { (success, error) -> Void in
+            if success {
+                self.input?.inputTextView?.resignFirstResponder()
+                ProgressHUD.showSuccess("评论成功")
+                
+                self.bookObject?.incrementKey("discussNumber")
+                self.bookObject?.saveInBackground()
+                
+            }else{
+                
+            }
+        }
+    }
+    
+    func keyboardWillHide(inputView: InputView!, keyboardHeight: CGFloat, animationDuration duration: NSTimeInterval, animationCurve: UIViewAnimationCurve) {
+        UIView.animateWithDuration(duration, delay: 0, options: .BeginFromCurrentState, animations: { () -> Void in
+            self.layView?.alpha = 0
+            self.input?.bottom = SCREEN_HIGHT
+            }) { (finish) -> Void in
+                self.layView?.hidden = true
+                self.input?.resetInputView()
+                self.input?.inputTextView?.text = ""
+                self.input?.bottom = SCREEN_HIGHT
+        }
+    }
+    
+    func keyboardWillShow(inputView: InputView!, keyboardHeight: CGFloat, animationDuration duration: NSTimeInterval, animationCurve: UIViewAnimationCurve) {
+        self.keyBoardHeight = keyboardHeight
+        self.layView?.hidden = false
+        UIView.animateWithDuration(duration, delay: 0, options: .BeginFromCurrentState, animations: { () -> Void in
+            self.layView?.alpha = 0.2
+            self.input?.bottom = SCREEN_HIGHT-keyboardHeight
+            }) { (finish) -> Void in
+        }
     }
     
 

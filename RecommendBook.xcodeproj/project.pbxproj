@@ -95,6 +95,12 @@
 		BED0333E1C5516EC00030D92 /* social-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BED0332D1C5516EC00030D92 /* social-icon@2x.png */; };
 		BED0333F1C5516EC00030D92 /* star-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = BED0332E1C5516EC00030D92 /* star-icon.png */; };
 		BED033401C5516EC00030D92 /* star-icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BED0332F1C5516EC00030D92 /* star-icon@2x.png */; };
+		BED8DD881C7B253800CD5FB9 /* NSMutableArray+SWUtilityButtons.m in Sources */ = {isa = PBXBuildFile; fileRef = BED8DD7D1C7B253700CD5FB9 /* NSMutableArray+SWUtilityButtons.m */; };
+		BED8DD891C7B253800CD5FB9 /* SWCellScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = BED8DD7F1C7B253700CD5FB9 /* SWCellScrollView.m */; };
+		BED8DD8A1C7B253800CD5FB9 /* SWLongPressGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = BED8DD811C7B253800CD5FB9 /* SWLongPressGestureRecognizer.m */; };
+		BED8DD8B1C7B253800CD5FB9 /* SWTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BED8DD831C7B253800CD5FB9 /* SWTableViewCell.m */; };
+		BED8DD8C1C7B253800CD5FB9 /* SWUtilityButtonTapGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = BED8DD851C7B253800CD5FB9 /* SWUtilityButtonTapGestureRecognizer.m */; };
+		BED8DD8D1C7B253800CD5FB9 /* SWUtilityButtonView.m in Sources */ = {isa = PBXBuildFile; fileRef = BED8DD871C7B253800CD5FB9 /* SWUtilityButtonView.m */; };
 		BEE178F61C58FF6700F05DD3 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BEE178F31C58FF6700F05DD3 /* ProgressHUD.bundle */; };
 		BEE178F71C58FF6700F05DD3 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = BEE178F51C58FF6700F05DD3 /* ProgressHUD.m */; };
 		BEEC2D301C774DC300DFE924 /* BookDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BEEC2D2F1C774DC300DFE924 /* BookDetailViewController.swift */; };
@@ -244,6 +250,18 @@
 		BED0332D1C5516EC00030D92 /* social-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "social-icon@2x.png"; sourceTree = "<group>"; };
 		BED0332E1C5516EC00030D92 /* star-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-icon.png"; sourceTree = "<group>"; };
 		BED0332F1C5516EC00030D92 /* star-icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "star-icon@2x.png"; sourceTree = "<group>"; };
+		BED8DD7C1C7B253700CD5FB9 /* NSMutableArray+SWUtilityButtons.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+SWUtilityButtons.h"; sourceTree = "<group>"; };
+		BED8DD7D1C7B253700CD5FB9 /* NSMutableArray+SWUtilityButtons.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+SWUtilityButtons.m"; sourceTree = "<group>"; };
+		BED8DD7E1C7B253700CD5FB9 /* SWCellScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWCellScrollView.h; sourceTree = "<group>"; };
+		BED8DD7F1C7B253700CD5FB9 /* SWCellScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWCellScrollView.m; sourceTree = "<group>"; };
+		BED8DD801C7B253700CD5FB9 /* SWLongPressGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWLongPressGestureRecognizer.h; sourceTree = "<group>"; };
+		BED8DD811C7B253800CD5FB9 /* SWLongPressGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWLongPressGestureRecognizer.m; sourceTree = "<group>"; };
+		BED8DD821C7B253800CD5FB9 /* SWTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWTableViewCell.h; sourceTree = "<group>"; };
+		BED8DD831C7B253800CD5FB9 /* SWTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWTableViewCell.m; sourceTree = "<group>"; };
+		BED8DD841C7B253800CD5FB9 /* SWUtilityButtonTapGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWUtilityButtonTapGestureRecognizer.h; sourceTree = "<group>"; };
+		BED8DD851C7B253800CD5FB9 /* SWUtilityButtonTapGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWUtilityButtonTapGestureRecognizer.m; sourceTree = "<group>"; };
+		BED8DD861C7B253800CD5FB9 /* SWUtilityButtonView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWUtilityButtonView.h; sourceTree = "<group>"; };
+		BED8DD871C7B253800CD5FB9 /* SWUtilityButtonView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWUtilityButtonView.m; sourceTree = "<group>"; };
 		BEE178F31C58FF6700F05DD3 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
 		BEE178F41C58FF6700F05DD3 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
 		BEE178F51C58FF6700F05DD3 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
@@ -599,6 +617,7 @@
 		BECDF78E1C53C49800D70D52 /* ThirdKit */ = {
 			isa = PBXGroup;
 			children = (
+				BED8DD7B1C7B253700CD5FB9 /* LeftSwipeCell */,
 				BE4BCE3D1C79E63A00874964 /* InputView */,
 				BEEC550B1C74BFA8009FDD55 /* SDWebImage */,
 				BE42042A1C5C664400469350 /* MJRefresh */,
@@ -697,6 +716,25 @@
 				BED0332F1C5516EC00030D92 /* star-icon@2x.png */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		BED8DD7B1C7B253700CD5FB9 /* LeftSwipeCell */ = {
+			isa = PBXGroup;
+			children = (
+				BED8DD7C1C7B253700CD5FB9 /* NSMutableArray+SWUtilityButtons.h */,
+				BED8DD7D1C7B253700CD5FB9 /* NSMutableArray+SWUtilityButtons.m */,
+				BED8DD7E1C7B253700CD5FB9 /* SWCellScrollView.h */,
+				BED8DD7F1C7B253700CD5FB9 /* SWCellScrollView.m */,
+				BED8DD801C7B253700CD5FB9 /* SWLongPressGestureRecognizer.h */,
+				BED8DD811C7B253800CD5FB9 /* SWLongPressGestureRecognizer.m */,
+				BED8DD821C7B253800CD5FB9 /* SWTableViewCell.h */,
+				BED8DD831C7B253800CD5FB9 /* SWTableViewCell.m */,
+				BED8DD841C7B253800CD5FB9 /* SWUtilityButtonTapGestureRecognizer.h */,
+				BED8DD851C7B253800CD5FB9 /* SWUtilityButtonTapGestureRecognizer.m */,
+				BED8DD861C7B253800CD5FB9 /* SWUtilityButtonView.h */,
+				BED8DD871C7B253800CD5FB9 /* SWUtilityButtonView.m */,
+			);
+			path = LeftSwipeCell;
 			sourceTree = "<group>";
 		};
 		BEE178F21C58FF6700F05DD3 /* ProgressHUD */ = {
@@ -919,6 +957,7 @@
 				BEEC553A1C74BFA8009FDD55 /* UIImageView+HighlightedWebCache.m in Sources */,
 				BEEC2D301C774DC300DFE924 /* BookDetailViewController.swift in Sources */,
 				BE42045C1C5C664400469350 /* MJRefreshAutoGifFooter.m in Sources */,
+				BED8DD8C1C7B253800CD5FB9 /* SWUtilityButtonTapGestureRecognizer.m in Sources */,
 				BE4204611C5C664400469350 /* MJRefreshBackStateFooter.m in Sources */,
 				BE4204691C5C664400469350 /* UIView+MJExtension.m in Sources */,
 				BE42045A1C5C664400469350 /* MJRefreshFooter.m in Sources */,
@@ -941,7 +980,10 @@
 				BED0330B1C5479FF00030D92 /* VPImageCropperViewController.m in Sources */,
 				BE42045B1C5C664400469350 /* MJRefreshHeader.m in Sources */,
 				BEEC552D1C74BFA8009FDD55 /* MKAnnotationView+WebCache.m in Sources */,
+				BED8DD8B1C7B253800CD5FB9 /* SWTableViewCell.m in Sources */,
 				BECDF79C1C53C78C00D70D52 /* NSString+TextDirectionality.m in Sources */,
+				BED8DD8A1C7B253800CD5FB9 /* SWLongPressGestureRecognizer.m in Sources */,
+				BED8DD8D1C7B253800CD5FB9 /* SWUtilityButtonView.m in Sources */,
 				BEE178F71C58FF6700F05DD3 /* ProgressHUD.m in Sources */,
 				BED033071C546A0300030D92 /* PhotoPickerController.swift in Sources */,
 				BE4009621C5645BC003DF790 /* IGLDropDownItem.m in Sources */,
@@ -952,6 +994,7 @@
 				BE4204681C5C664400469350 /* UIScrollView+MJRefresh.m in Sources */,
 				BEEC55361C74BFA8009FDD55 /* UIButton+WebCache.m in Sources */,
 				BEEC55301C74BFA8009FDD55 /* SDWebImageCompat.m in Sources */,
+				BED8DD881C7B253800CD5FB9 /* NSMutableArray+SWUtilityButtons.m in Sources */,
 				BE4BCE3A1C79AD3900874964 /* BookDetailView.swift in Sources */,
 				BE4204601C5C664400469350 /* MJRefreshBackNormalFooter.m in Sources */,
 				BE4009631C5645BC003DF790 /* IGLDropDownMenu.m in Sources */,
@@ -968,6 +1011,7 @@
 				BE4BCE471C79F72500874964 /* CommnentViewController.swift in Sources */,
 				BED0330F1C54950D00030D92 /* PushTypeViewController.swift in Sources */,
 				BEEC55331C74BFA8009FDD55 /* SDWebImageDownloaderOperation.m in Sources */,
+				BED8DD891C7B253800CD5FB9 /* SWCellScrollView.m in Sources */,
 				BED033111C54952300030D92 /* PushScoreViewController.swift in Sources */,
 				BEEC55381C74BFA8009FDD55 /* UIImage+MultiFormat.m in Sources */,
 				BEEC553C1C74BFA8009FDD55 /* UIView+WebCacheOperation.m in Sources */,
