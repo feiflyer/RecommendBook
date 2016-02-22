@@ -79,8 +79,13 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
         
         ProgressHUD.show("")
         
-        let object = AVObject(className: "Book")
-        PushBook.pushBookInBackgroound(dict, object: object)
+        if self.fixType == "fix" {
+            PushBook.pushBookInBackgroound(dict, object: self.BookObject!)
+        }else{
+            
+            let object = AVObject(className: "Book")
+            PushBook.pushBookInBackgroound(dict, object: object)
+        }
         
     }
     
@@ -100,7 +105,7 @@ class PushNewBookViewController: UIViewController , BookTittleDelegate , PhotoPi
             type = (self.BookObject!["type"] as? String)!
             detailType = (self.BookObject!["detailType"] as? String)!
             bookDescription = (self.BookObject!["description"] as? String)!
-            score.show_star = (Int)((self.BookObject!["score"] as? String)!)!
+            score.show_star = (Int)((self.BookObject!["score"] as? NSNumber)!)
             if bookDescription != "" {
                 self.titleArray.append("")
             }

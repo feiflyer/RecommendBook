@@ -127,13 +127,13 @@ class PushViewController: UIViewController ,UITableViewDataSource , UITableViewD
         let object = self.dataArray[indexPath!.row]
         
         if index == 0 {  //编辑
-            let vc = PushViewController()
+            let vc = PushNewBookViewController()
             TitleGeneralFactory.addTitle(vc, leftTitle: "关闭", rightTitle: "发布")
             
             
-//            vc.fixType = "fix"
-//            vc.BookObject = object
-//            vc.fixBook()
+            vc.fixType = "fix"
+            vc.BookObject = object
+            vc.fixBook()
             self.presentViewController(vc, animated: true, completion: { () -> Void in
                 
             })
