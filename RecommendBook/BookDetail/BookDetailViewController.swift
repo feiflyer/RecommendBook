@@ -8,7 +8,7 @@
 
 import UIKit
 
-class BookDetailViewController: UIViewController , BookTabBarDelegate , InputViewDelegate{
+class BookDetailViewController: UIViewController , BookTabBarDelegate , InputViewDelegate , HZPhotoBrowserDelegate{
     var bookObject: AVObject?
     
     var BookTitleView: BookDetailView?
@@ -92,10 +92,11 @@ class BookDetailViewController: UIViewController , BookTabBarDelegate , InputVie
 //        
 //        self.BookTitleView?.more?.text = (loveNumber?.stringValue)!+"个喜欢."+(discussNumber?.stringValue)!+"次评论."+(scanNumber?.stringValue)!+"次浏览"
 //        
-//        let tap = UITapGestureRecognizer(target: self, action: Selector("photoBrowser"))
-//        self.BookTitleView?.cover?.addGestureRecognizer(tap)
-//        self.BookTitleView?.cover?.userInteractionEnabled = true
-//        
+        let tap = UITapGestureRecognizer(target: self, action: Selector("photoBrowser"))
+        //以下两句一般配套使用
+        self.BookTitleView?.cover?.addGestureRecognizer(tap)
+        self.BookTitleView?.cover?.userInteractionEnabled = true
+//
 //        bookObject?.incrementKey("scanNumber")
         bookObject?.saveInBackground()
         
@@ -244,6 +245,28 @@ class BookDetailViewController: UIViewController , BookTabBarDelegate , InputVie
         
     }
     
+    
+    /**
+     *  PhotoBrowser
+     */
+    func photoBrowser(){
+        let photoBrowser = HZPhotoBrowser()
+        //设置要预览的图片张数
+        photoBrowser.imageCount = 1
+        //首先显示第几张图片
+        photoBrowser.currentImageIndex = 0
+        photoBrowser.delegate = self
+        photoBrowser.show()
+    }
+    
+    func photoBrowser(browser: HZPhotoBrowser!, placeholderImageForIndex index: Int) -> UIImage! {
+        return self.BookTitleView?.cover?.image
+    }
+    
+    func photoBrowser(browser: HZPhotoBrowser!, highQualityImageURLForIndex index: Int) -> NSURL! {
+        let coverFile = bookObject!["cover"] as? AVFile
+        return NSURL(string: coverFile!.url)
+    }
 
     /*
     // MARK: - Navigation
