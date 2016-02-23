@@ -86,18 +86,18 @@ class BookDetailViewController: UIViewController , BookTabBarDelegate , InputVie
         let score = bookObject!["score"] as? NSNumber
         BookTitleView?.score?.show_star = (score?.integerValue)!
         
-//        let scanNumber = bookObject!["scanNumber"] as? NSNumber
-//        let loveNumber = bookObject!["loveNumber"] as? NSNumber
-//        let discussNumber = bookObject!["discussNumber"] as? NSNumber
-//        
-//        self.BookTitleView?.more?.text = (loveNumber?.stringValue)!+"个喜欢."+(discussNumber?.stringValue)!+"次评论."+(scanNumber?.stringValue)!+"次浏览"
-//        
+        let scanNumber = bookObject!["scanNumber"] as? NSNumber
+        let loveNumber = bookObject!["loveNumber"] as? NSNumber
+        let discussNumber = bookObject!["discussNumber"] as? NSNumber
+        
+        self.BookTitleView?.more?.text = (loveNumber?.stringValue)!+"个喜欢."+(discussNumber?.stringValue)!+"次评论."+(scanNumber?.stringValue)!+"次浏览"
+
         let tap = UITapGestureRecognizer(target: self, action: Selector("photoBrowser"))
         //以下两句一般配套使用
         self.BookTitleView?.cover?.addGestureRecognizer(tap)
         self.BookTitleView?.cover?.userInteractionEnabled = true
-//
-//        bookObject?.incrementKey("scanNumber")
+
+        bookObject?.incrementKey("scanNumber")
         bookObject?.saveInBackground()
         
     }
